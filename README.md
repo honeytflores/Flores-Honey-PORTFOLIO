@@ -53,7 +53,4 @@ vercel --prod          # once you're happy with the preview
 3. Framework preset: "Other" (no build command needed).
 4. Deploy.
 
-## Before you publish
-- [ ] Add `files/Honey-Flores-Resume.pdf` — the "Download resume" links point to it, but the file isn't in the repo yet
-- [ ] Double-check the email address and any contact details
-- [ ] Consider adding a custom domain in Vercel's project settings once live
+
