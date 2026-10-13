@@ -69,21 +69,41 @@
       <section class="py-8 border-b border-line">
         <h2 class="text-xl font-semibold">Scenario</h2>
         <p class="mt-3 text-muted leading-relaxed">I've kept a personal budget tracker in Excel since 2024 — a separate monthly tab logging every transaction, plus a "Diagnosis" tab that applies a needs-vs-wants framework to flag overspending. The catch: every month, I was retyping each category's total into Diagnosis by hand, reading it off the raw log myself. Could that hand-off be automated instead — and would automating it surface anything the manual process had been getting wrong?</p>
+        <figure class="mt-6">
+          <img src="files/Proj3BudgetTracker/05 raw log snippet.png" alt="A snippet of the raw monthly transaction log, showing the Checkbox, Actual, What was Paid, Expected, Date, and Type columns." class="w-full rounded-lg border border-line shadow-sm">
+          <figcaption class="mt-2 font-mono-tight text-[11px] text-muted">A few rows of the raw monthly log — every transaction gets a Type tag, which is what the Diagnosis pipeline keys off of.</figcaption>
+        </figure>
       </section>
 
       <section class="py-8 border-b border-line">
         <h2 class="text-xl font-semibold">Summary</h2>
         <p class="mt-3 text-muted leading-relaxed">I built a "Category Map" lookup tab pairing each Diagnosis line item to the exact category tag used in that month's raw transaction log, then rewrote the Diagnosis totals with VLOOKUP (to find the right tag) feeding into SUMIFS (to total every transaction carrying it). Updating a transaction in the raw log now flows straight through to the diagnosis — no manual re-entry. I added a reconciliation check at the bottom of the sheet comparing the automated total against the log's own running total, and it now matches exactly.</p>
+        <figure class="mt-6">
+          <img src="files/Proj3BudgetTracker/02 diagnosis formula vlookup sumifs.png" alt="The Diagnosis tab's formula bar, showing the VLOOKUP and SUMIFS formula for the Dine out category, with the resulting total of 2,244.00 highlighted." class="w-full rounded-lg border border-line shadow-sm">
+          <figcaption class="mt-2 font-mono-tight text-[11px] text-muted">The VLOOKUP + SUMIFS formula live in the Diagnosis tab — it looks up the matching log category, then totals every transaction carrying it.</figcaption>
+        </figure>
+        <figure class="mt-6">
+          <img src="files/Proj3BudgetTracker/03 diagnosis full table.png" alt="The full Diagnosis tab showing every expense category with its automated total, fixed-or-variable flag, need-or-want flag, and percent of income." class="w-full rounded-lg border border-line shadow-sm">
+          <figcaption class="mt-2 font-mono-tight text-[11px] text-muted">The finished output — every line in this table now pulls its total automatically instead of being retyped by hand.</figcaption>
+        </figure>
       </section>
 
       <section class="py-8 border-b border-line">
         <h2 class="text-xl font-semibold">Key Challenges and Solutions</h2>
         <h3 class="mt-5 font-semibold">A category taxonomy that had drifted</h3>
         <p class="mt-2 text-muted leading-relaxed">Building the Category Map meant comparing every Diagnosis line against every category actually in use in the log — and they didn't fully agree. One Diagnosis line used different wording than its matching log category ("Dine out" vs. the log's "Eat Out"), which I mapped across explicitly. More significantly, the log had four active spending categories with no Diagnosis line at all — together, close to 30% of that month's recorded spending had nowhere to land in the diagnosis. I added the missing lines rather than forcing that spending into a category it didn't belong in.</p>
+        <figure class="mt-6">
+          <img src="files/Proj3BudgetTracker/01 category map.png" alt="The Category Map tab, pairing each Diagnosis line label to its matching raw-log category, with notes flagging the Dine out / Eat Out naming mismatch and the four newly added categories." class="w-full rounded-lg border border-line shadow-sm">
+          <figcaption class="mt-2 font-mono-tight text-[11px] text-muted">The Category Map tab — the "Dine out" / "Eat Out" mismatch and the four categories the log had that Diagnosis didn't are both flagged in the Note column.</figcaption>
+        </figure>
         <h3 class="mt-5 font-semibold">Finding a formula bug</h3>
         <p class="mt-2 text-muted leading-relaxed">A separate "wishlist" tab totaled its estimated prices with <code class="font-mono-tight text-[13px] bg-paperalt px-1.5 py-0.5 rounded">=SUMIF(date_range, "&gt;0")</code> — summing the date column, not the price column. It went unnoticed because Excel date serial numbers and peso price estimates both land in the same numeric range, so the output still looked like a plausible total. I caught it by re-deriving the total independently and comparing. Fixed to a straight <code class="font-mono-tight text-[13px] bg-paperalt px-1.5 py-0.5 rounded">SUM</code> over the correct column, it dropped by roughly 20%.</p>
         <h3 class="mt-5 font-semibold">Verifying the automation, not just trusting it</h3>
         <p class="mt-2 text-muted leading-relaxed">A formula that runs without errors isn't the same as a formula that's right. I added a reconciliation row that independently sums the raw log's "actual expense" column and compares it to what the Category Map pipeline produces — if a future transaction ever gets logged under a category the map doesn't recognize, that row flags the mismatch instead of silently under-counting.</p>
+        <figure class="mt-6">
+          <img src="files/Proj3BudgetTracker/04 reconciliation check.png" alt="The reconciliation check row at the bottom of the Diagnosis tab, showing a difference of 0.00 and the message Matches the raw log exactly." class="w-full rounded-lg border border-line shadow-sm">
+          <figcaption class="mt-2 font-mono-tight text-[11px] text-muted">The reconciliation check — a 0.00 difference means the automated total matches the raw log's own total exactly.</figcaption>
+        </figure>
       </section>
 
       <section class="py-8 border-b border-line">
