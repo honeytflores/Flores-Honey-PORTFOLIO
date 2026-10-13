@@ -1,672 +1,623 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Honey Flores.">
-  <title>Honey Flores</title>
-  <link rel="icon" type="image/png" href="files/hf-logo-thin-separate-1024.png">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Honey Flores — aspiring data analyst with a financial-services customer support background.">
+<title>Honey Flores — Data Analyst Portfolio</title>
+<link rel="icon" type="image/png" href="files/hf-logo-thin-separate-1024.png">
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      padding: 0;
-      background: #fbfaf6;
-      color: #1b2430;
-      font-family: Arial, sans-serif;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    [data-layer="Data analyst portfolio"] {
-      width: 100% !important;
-      max-width: 1440px;
-      margin: 0 auto;
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+          mono: ['"IBM Plex Mono"', 'monospace'],
+        },
+        colors: {
+          ink: '#6D1730',
+          teal: '#B03C17',
+          tealdark: '#561B4B',
+          tealmid: '#DC9829',
+          tealpale: 'rgba(248,241,225,0.78)',
+          tealwash: '#DC9829',
+          mint: '#F8F1E1',
+          pill: 'rgba(220,152,41,0.20)',
+          muted: '#4E5029',
+          faint: 'rgba(78,80,41,0.60)',
+          line: 'rgba(109,23,48,0.16)',
+          paper: '#F8F1E1',
+          paperalt: 'rgba(109,23,48,0.045)',
+        }
+      }
     }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(2.5rem, 8vw, 5rem);
-    }
-  </style>
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  .font-mono-tight { font-family: 'IBM Plex Mono', monospace; }
+</style>
 </head>
-<body>
-<div data-layer="Data analyst portfolio" class="DataAnalystPortfolio" style="width: 1440px; background: #F8F7F3; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-  <div data-layer="Introduction" class="Introduction" style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-    <div data-layer="Navigation" class="Navigation" style="align-self: stretch; height: 96px; padding-left: 80px; padding-right: 80px; overflow: hidden; border-bottom: 1px #DAE1DC solid; justify-content: space-between; align-items: center; display: inline-flex">
-      <div data-layer="Identity" class="Identity" style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
-        <div data-layer="Brand mark" class="BrandMark" style="width: 34px; height: 34px; padding: 8px; background: #0A454A; overflow: hidden; border-radius: 6px; justify-content: flex-start; align-items: flex-end; gap: 3px; display: flex">
-          <div data-layer="Signal bar" class="SignalBar" style="width: 4px; height: 8px; background: #C6E0D6; border-radius: 1px"></div>
-          <div data-layer="Signal bar" class="SignalBar" style="width: 4px; height: 14px; background: #C6E0D6; border-radius: 1px"></div>
-          <div data-layer="Signal bar" class="SignalBar" style="width: 4px; height: 18px; background: #C6E0D6; border-radius: 1px"></div>
-        </div>
-        <div data-layer="Name placeholder" class="NamePlaceholder" style="color: #172D30; font-size: 19px; font-family: Inter; font-weight: 600; word-wrap: break-word">HONEY FLORES</div>
-        <div data-layer="Portfolio descriptor" class="PortfolioDescriptor" style="color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">/ DATA PORTFOLIO</div>
+
+<body class="bg-paper text-ink">
+
+<!-- NAV -->
+<header class="border-b border-line">
+  <div class="max-w-[1280px] mx-auto px-6 md:px-10 h-20 md:h-24 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 bg-tealdark rounded-md flex items-end gap-[3px] p-2">
+        <span class="w-1 h-2 bg-tealwash rounded-sm"></span>
+        <span class="w-1 h-3.5 bg-tealwash rounded-sm"></span>
+        <span class="w-1 h-[18px] bg-tealwash rounded-sm"></span>
       </div>
-      <div data-layer="Navigation links" class="NavigationLinks" style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 30px; display: flex">
-        <div data-layer="Navigation link" class="NavigationLink" style="color: #58696B; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">About</div>
-        <div data-layer="Navigation link" class="NavigationLink" style="color: #58696B; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Projects</div>
-        <div data-layer="Navigation link" class="NavigationLink" style="color: #58696B; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Skills</div>
-        <div data-layer="Navigation link" class="NavigationLink" style="color: #58696B; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Experience</div>
-        <div data-layer="Action" class="Action" style="height: 52px; padding-left: 22px; padding-right: 22px; background: #F8F7F3; overflow: hidden; border-radius: 6px; outline: 1px #DAE1DC solid; outline-offset: -1px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
-          <div data-layer="Label" class="Label" style="color: #172D30; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Let’s connect</div>
-          <div data-layer="arrow-up-right" class="ArrowUpRight" style="width: 17px; height: 17px; position: relative; overflow: hidden">
-            <div data-layer="Vector" class="Vector" style="width: 7.08px; height: 7.08px; left: 4.96px; top: 4.96px; position: absolute; outline: 1.60px #172D30 solid; outline-offset: -0.80px"></div>
-          </div>
-        </div>
+      <span class="font-semibold text-[17px] tracking-tight">HONEY FLORES</span>
+      <span class="hidden sm:inline font-mono-tight text-[10px] text-muted">/ DATA PORTFOLIO</span>
+    </div>
+    <nav class="hidden md:flex items-center gap-8 text-[13px] text-muted">
+      <a href="#about" class="hover:text-ink transition">About</a>
+      <a href="#projects" class="hover:text-ink transition">Projects</a>
+      <a href="#skills" class="hover:text-ink transition">Skills</a>
+      <a href="#experience" class="hover:text-ink transition">Experience</a>
+      <a href="#contact" class="h-[52px] px-5 inline-flex items-center gap-2 border border-line rounded-md font-semibold text-ink text-sm hover:bg-paperalt transition">
+        Let's connect
+        <svg width="15" height="15" viewBox="0 0 17 17" fill="none"><path d="M5 12L12 5M12 5H6M12 5V11" stroke="#6D1730" stroke-width="1.6"/></svg>
+      </a>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <div class="max-w-[1280px] mx-auto px-6 md:px-10 py-14 md:py-20 grid md:grid-cols-2 gap-12 items-center">
+    <div class="flex flex-col gap-6">
+      <div class="inline-flex items-center gap-2 w-fit">
+        <span class="w-[7px] h-[7px] rounded-full bg-teal"></span>
+        <span class="font-mono-tight text-[11px] text-teal tracking-wide">ASPIRING DATA ANALYST · FINANCIAL SERVICES BACKGROUND</span>
+      </div>
+      <h1 class="text-[2.4rem] md:text-[3.4rem] font-semibold leading-[1.08] tracking-tight">
+        Turning customer data into clear, decision-ready insights.
+      </h1>
+      <p class="text-lg text-muted max-w-[46ch] leading-relaxed">
+        I'm moving from financial-services customer support into data analysis — bringing a detail-driven, customer-first perspective to business questions that matter.
+      </p>
+      <div class="flex flex-wrap gap-3 pt-2">
+        <a href="#projects" class="h-[52px] px-6 inline-flex items-center gap-3 bg-teal text-white rounded-md font-semibold text-sm hover:bg-tealdark transition">
+          Explore projects
+          <svg width="15" height="15" viewBox="0 0 17 17" fill="none"><path d="M8.5 3v10m0 0l4-4m-4 4l-4-4" stroke="white" stroke-width="1.6"/></svg>
+        </a>
+        <a href="files/Honey-Flores-Resume.pdf" download class="h-[52px] px-6 inline-flex items-center gap-3 border border-line rounded-md font-semibold text-sm hover:bg-paperalt transition">
+          Download résumé
+          <svg width="15" height="15" viewBox="0 0 17 17" fill="none"><path d="M8.5 2v9m0 0l3.5-3.5M8.5 11L5 7.5M3 13h11" stroke="#6D1730" stroke-width="1.6"/></svg>
+        </a>
       </div>
     </div>
-    <div data-layer="Hero content" class="HeroContent" style="align-self: stretch; padding-top: 76px; padding-bottom: 72px; padding-left: 80px; padding-right: 80px; overflow: hidden; justify-content: flex-start; align-items: center; gap: 66px; display: inline-flex">
-      <div data-layer="Introduction copy" class="IntroductionCopy" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 26px; display: inline-flex">
-        <div data-layer="Role label" class="RoleLabel" style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
-          <div data-layer="Status marker" class="StatusMarker" style="width: 7px; height: 7px; background: #087E82; border-radius: 9999px"></div>
-          <div data-layer="Role" class="Role" style="color: #087E82; font-size: 11px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">ASPIRING DATA ANALYST · RETAIL BANKING BACKGROUND</div>
+
+    <!-- real quick-facts card, replacing the fake synthetic chart -->
+    <div class="bg-tealdark rounded-2xl p-7 md:p-8 flex flex-col gap-6 shadow-lg">
+      <div class="flex items-start justify-between">
+        <div class="flex flex-col gap-1.5">
+          <span class="font-mono-tight text-[10px] text-tealpale tracking-wide">THE WORK, IN NUMBERS</span>
+          <span class="text-mint text-xl md:text-2xl font-medium">A track record you can verify.</span>
         </div>
-        <div data-layer="Headline" class="Headline" style="align-self: stretch; color: #172D30; font-size: 64px; font-family: Inter; font-weight: 600; line-height: 67.84px; word-wrap: break-word">Turning customer insights into data-driven decisions.</div>
-        <div data-layer="Introduction description" class="IntroductionDescription" style="width: 545px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-          <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 18px; font-family: Inter; font-weight: 400; line-height: 29.70px; word-wrap: break-word">I’m moving from retail banking customer service into data analysis — bringing a customer-first perspective to business questions that matter.</div>
-        </div>
-        <div data-layer="Primary actions" class="PrimaryActions" style="overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
-          <div data-layer="Action" class="Action" style="height: 52px; padding-left: 22px; padding-right: 22px; background: #087E82; overflow: hidden; border-radius: 6px; outline: 1px rgba(0, 0, 0, 0) solid; outline-offset: -1px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
-            <div data-layer="Label" class="Label" style="color: white; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Explore projects</div>
-            <div data-layer="arrow-down" class="ArrowDown" style="width: 17px; height: 17px; position: relative; overflow: hidden">
-              <div data-layer="Vector" class="Vector" style="width: 9.92px; height: 9.92px; left: 3.54px; top: 3.54px; position: absolute; outline: 1.60px white solid; outline-offset: -0.80px"></div>
-            </div>
-          </div>
-          <div data-layer="Action" class="Action" style="height: 52px; padding-left: 22px; padding-right: 22px; background: #F8F7F3; overflow: hidden; border-radius: 6px; outline: 1px #DAE1DC solid; outline-offset: -1px; justify-content: flex-start; align-items: center; gap: 12px; display: flex">
-            <div data-layer="Label" class="Label" style="color: #172D30; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Download résumé</div>
-            <div data-layer="download" class="Download" style="width: 17px; height: 17px; position: relative; overflow: hidden">
-              <div data-layer="Vector" class="Vector" style="width: 12.75px; height: 12.75px; left: 2.13px; top: 2.13px; position: absolute; outline: 1.60px #172D30 solid; outline-offset: -0.80px"></div>
-            </div>
-          </div>
-        </div>
-        <div data-layer="Résumé placeholder" class="RSumPlaceholder" style="color: #788483; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">RÉSUMÉ PDF: [ADD YOUR FILE]</div>
       </div>
-      <div data-layer="Illustrative analysis preview" class="IllustrativeAnalysisPreview" style="width: 550px; padding: 32px; background: #0A454A; box-shadow: 0px 16px 40px rgba(23, 60, 53, 0.07); overflow: hidden; border-radius: 20px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-        <div data-layer="Preview header" class="PreviewHeader" style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
-          <div data-layer="Project label" class="ProjectLabel" style="overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-            <div data-layer="Eyebrow" class="Eyebrow" style="color: #A9CAC6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">THE CUSTOMER EXPERIENCE, IN DATA</div>
-            <div data-layer="Chart title" class="ChartTitle" style="color: #F3F8F4; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Behind every number, a person.</div>
-          </div>
-          <div data-layer="chart-no-axes-combined" class="ChartNoAxesCombined" style="width: 28px; height: 28px; position: relative; overflow: hidden">
-            <div data-layer="Vector" class="Vector" style="width: 23.34px; height: 21px; left: 2.33px; top: 3.50px; position: absolute; outline: 1.50px #90C4B9 solid; outline-offset: -0.75px"></div>
-          </div>
+
+      <div class="grid grid-cols-2 gap-5">
+        <div class="flex flex-col gap-1">
+          <span class="font-mono-tight text-2xl text-mint font-medium">1,500+</span>
+          <span class="text-tealpale text-xs leading-snug">disputes reviewed monthly for fraud, Coforge</span>
         </div>
-        <div data-layer="Legend" class="Legend" style="overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
-          <div data-layer="Legend item" class="LegendItem" style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
-            <div data-layer="Series marker" class="SeriesMarker" style="width: 16px; height: 3px; background: #90C4B9"></div>
-            <div data-layer="Series label" class="SeriesLabel" style="color: #A9CAC6; font-size: 11px; font-family: Inter; font-weight: 400; word-wrap: break-word">Wait time (min)</div>
-          </div>
-          <div data-layer="Legend item" class="LegendItem" style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
-            <div data-layer="Series marker" class="SeriesMarker" style="width: 16px; height: 3px; background: #A9CAC6"></div>
-            <div data-layer="Series label" class="SeriesLabel" style="color: #A9CAC6; font-size: 11px; font-family: Inter; font-weight: 400; word-wrap: break-word">Service target</div>
-          </div>
+        <div class="flex flex-col gap-1">
+          <span class="font-mono-tight text-2xl text-mint font-medium">95%</span>
+          <span class="text-tealpale text-xs leading-snug">call resolution rate, Sutherland</span>
         </div>
-        <div data-layer="Wait time chart" class="WaitTimeChart" style="width: 486px; height: 234px; position: relative; overflow: hidden">
-          <div data-layer="Data point" class="DataPoint" style="width: 10px; height: 10px; left: 209px; top: 50px; position: absolute; background: #F3F8F4; border-radius: 9999px; border: 2px #0A454A solid"></div>
-          <div data-layer="Time label" class="TimeLabel" style="left: 432px; top: 197px; position: absolute; color: #A9CAC6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">17:00</div>
-          <div data-layer="Time label" class="TimeLabel" style="left: 333px; top: 197px; position: absolute; color: #A9CAC6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">15:00</div>
-          <div data-layer="Time label" class="TimeLabel" style="left: 234px; top: 197px; position: absolute; color: #A9CAC6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">13:00</div>
-          <div data-layer="Time label" class="TimeLabel" style="left: 135px; top: 197px; position: absolute; color: #A9CAC6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">11:00</div>
-          <div data-layer="Time label" class="TimeLabel" style="left: 36px; top: 197px; position: absolute; color: #A9CAC6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">09:00</div>
-          <div data-layer="Wait time trend" class="WaitTimeTrend" style="width: 446px; height: 160px; left: 36px; top: 20px; position: absolute; border: 3px #90C4B9 solid"></div>
-          <div data-layer="Service target" class="ServiceTarget" style="width: 446px; height: 1px; left: 36px; top: 126px; position: absolute; border: 1px #A9CAC6 solid"></div>
-          <div data-layer="Area under trend" class="AreaUnderTrend" style="width: 446px; height: 160px; left: 36px; top: 20px; position: absolute; background: linear-gradient(180deg, rgba(146, 212, 200, 0.30) 0%, rgba(146, 212, 200, 0) 100%)"></div>
-          <div data-layer="Axis label" class="AxisLabel" style="left: 0px; top: 171px; position: absolute; color: #A9CAC6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">0</div>
-          <div data-layer="Axis label" class="AxisLabel" style="left: 0px; top: 118px; position: absolute; color: #A9CAC6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">5</div>
-          <div data-layer="Axis label" class="AxisLabel" style="left: 0px; top: 65px; position: absolute; color: #A9CAC6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">10</div>
-          <div data-layer="Axis label" class="AxisLabel" style="left: 0px; top: 12px; position: absolute; color: #A9CAC6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">15</div>
-          <div data-layer="Gridline" class="Gridline" style="width: 446px; height: 1px; left: 36px; top: 179px; position: absolute; background: rgba(255, 255, 255, 0.09)"></div>
-          <div data-layer="Gridline" class="Gridline" style="width: 446px; height: 1px; left: 36px; top: 126px; position: absolute; background: rgba(255, 255, 255, 0.09)"></div>
-          <div data-layer="Gridline" class="Gridline" style="width: 446px; height: 1px; left: 36px; top: 73px; position: absolute; background: rgba(255, 255, 255, 0.09)"></div>
-          <div data-layer="Gridline" class="Gridline" style="width: 446px; height: 1px; left: 36px; top: 20px; position: absolute; background: rgba(255, 255, 255, 0.09)"></div>
+        <div class="flex flex-col gap-1">
+          <span class="font-mono-tight text-2xl text-mint font-medium">0.75</span>
+          <span class="text-tealpale text-xs leading-snug">ROC-AUC, personal fraud-detection model</span>
         </div>
-        <div data-layer="Business lens" class="BusinessLens" style="align-self: stretch; padding: 18px; background: rgba(255, 255, 255, 0.05); overflow: hidden; border-radius: 6px; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
-          <div data-layer="message-circle" class="MessageCircle" style="width: 20px; height: 20px; position: relative; overflow: hidden">
-            <div data-layer="Vector" class="Vector" style="width: 16.67px; height: 16.67px; left: 1.67px; top: 1.67px; position: absolute; outline: 1.50px #90C4B9 solid; outline-offset: -0.75px"></div>
-          </div>
-          <div data-layer="Question" class="Question" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: inline-flex">
-            <div data-layer="Label" class="Label" style="color: #90C4B9; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">START WITH A BETTER QUESTION</div>
-            <div data-layer="Business question" class="BusinessQuestion" style="align-self: stretch; color: #F3F8F4; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 21px; word-wrap: break-word">When might customers need more support?</div>
-          </div>
+        <div class="flex flex-col gap-1">
+          <span class="font-mono-tight text-2xl text-mint font-medium">50,000</span>
+          <span class="text-tealpale text-xs leading-snug">articles cleaned/verified, thesis dataset</span>
         </div>
-        <div data-layer="Data disclosure" class="DataDisclosure" style="align-self: stretch; color: #A9CAC6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">ILLUSTRATIVE / SYNTHETIC DATA · NOT A PROJECT RESULT</div>
       </div>
+
+      <div class="bg-white/5 rounded-md p-4 flex gap-3 items-start">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="shrink-0 mt-0.5"><path d="M10 2l6.5 3v5c0 4.5-2.8 7.6-6.5 8-3.7-.4-6.5-3.5-6.5-8V5L10 2z" stroke="#DC9829" stroke-width="1.5"/></svg>
+        <div class="flex flex-col gap-1">
+          <span class="font-mono-tight text-[10px] text-tealmid tracking-wide">START WITH A BETTER QUESTION</span>
+          <span class="text-mint text-sm leading-relaxed">Where in a process do errors or delays actually start?</span>
+        </div>
+      </div>
+      <span class="font-mono-tight text-[10px] text-tealpale">ALL FIGURES FROM REAL WORK · SOURCES IN EXPERIENCE SECTION BELOW</span>
     </div>
-    <div data-layer="Portfolio themes" class="PortfolioThemes" style="align-self: stretch; height: 78px; padding-left: 80px; padding-right: 80px; background: #EFF2EC; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
-      <div data-layer="Theme label" class="ThemeLabel" style="color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">A CUSTOMER-FIRST ANALYTICAL LENS</div>
-      <div data-layer="Theme" class="Theme" style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
-        <div data-layer="Marker" class="Marker" style="width: 5px; height: 5px; background: #087E82"></div>
-        <div data-layer="Theme name" class="ThemeName" style="color: #172D30; font-size: 14px; font-family: Inter; font-weight: 500; word-wrap: break-word">Customer experience</div>
+  </div>
+
+  <!-- theme strip -->
+  <div class="bg-paperalt">
+    <div class="max-w-[1280px] mx-auto px-6 md:px-10 h-[70px] flex flex-wrap items-center justify-between gap-4">
+      <span class="font-mono-tight text-[10px] text-muted">A CUSTOMER-FIRST ANALYTICAL LENS</span>
+      <div class="flex items-center gap-2">
+        <span class="w-[5px] h-[5px] bg-teal"></span>
+        <span class="text-sm font-medium">Data analysis</span>
       </div>
-      <div data-layer="Theme" class="Theme" style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
-        <div data-layer="Marker" class="Marker" style="width: 5px; height: 5px; background: #087E82"></div>
-        <div data-layer="Theme name" class="ThemeName" style="color: #172D30; font-size: 14px; font-family: Inter; font-weight: 500; word-wrap: break-word">Banking operations</div>
+      <div class="flex items-center gap-2">
+        <span class="w-[5px] h-[5px] bg-teal"></span>
+        <span class="text-sm font-medium">Process automation</span>
       </div>
-      <div data-layer="Theme" class="Theme" style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
-        <div data-layer="Marker" class="Marker" style="width: 5px; height: 5px; background: #087E82"></div>
-        <div data-layer="Theme name" class="ThemeName" style="color: #172D30; font-size: 14px; font-family: Inter; font-weight: 500; word-wrap: break-word">Actionable insights</div>
+      <div class="flex items-center gap-2">
+        <span class="w-[5px] h-[5px] bg-teal"></span>
+        <span class="text-sm font-medium">Customer experience</span>
       </div>
     </div>
   </div>
-  <div data-layer="About and career transition" class="AboutAndCareerTransition" style="align-self: stretch; padding: 80px; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 100px; display: inline-flex">
-    <div data-layer="Career story" class="CareerStory" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 26px; display: inline-flex">
-      <div data-layer="Section introduction" class="SectionIntroduction" style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
-        <div data-layer="Eyebrow" class="Eyebrow" style="color: #087E82; font-size: 11px; font-family: IBM Plex Mono; font-weight: 500; text-transform: uppercase; word-wrap: break-word">01 / About</div>
-        <div data-layer="Heading" class="Heading" style="align-self: stretch; color: #172D30; font-size: 42px; font-family: Inter; font-weight: 600; line-height: 48.30px; word-wrap: break-word">The human side of data.</div>
-      </div>
-      <div data-layer="Description" class="Description" style="align-self: stretch; color: #172D30; font-size: 19px; font-family: Inter; font-weight: 400; line-height: 31.35px; word-wrap: break-word">My starting point isn’t just a spreadsheet. It’s the customer on the other side of the counter.</div>
-      <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 26.40px; word-wrap: break-word">Retail banking customer service gives me a practical lens on customer needs and everyday operations. I’m now developing the analytical skills to turn that context into clearer questions, useful visualizations and thoughtful recommendations.</div>
-      <div data-layer="Personal detail placeholder" class="PersonalDetailPlaceholder" style="align-self: stretch; color: #788483; font-size: 11px; font-family: IBM Plex Mono; font-weight: 400; line-height: 17.60px; word-wrap: break-word">[Add your location, career goal and a personal detail here.]</div>
+</header>
+
+<main>
+
+<!-- PERSONAL INTRODUCTION -->
+<section id="hello" class="max-w-[1280px] mx-auto px-6 md:px-10 py-16 md:py-24 grid md:grid-cols-[320px_1fr] gap-12 md:gap-16 items-start">
+  <div class="flex flex-col items-center md:items-start gap-4">
+    <div class="relative w-full max-w-[280px]">
+      <div class="absolute -inset-2.5 border border-tealmid/60 rounded-2xl"></div>
+      <img src="files/honey-photo.jpg" alt="Honey Flores, BS Computer Science graduate, Polytechnic University of the Philippines" class="relative w-full aspect-[3/4] object-cover rounded-xl shadow-lg">
     </div>
-    <div data-layer="Career bridge" class="CareerBridge" style="width: 540px; padding: 32px; background: white; overflow: hidden; border-radius: 12px; outline: 1px #DAE1DC solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-      <div data-layer="Status" class="Status" style="padding-left: 11px; padding-right: 11px; padding-top: 7px; padding-bottom: 7px; background: #DBEFEB; overflow: hidden; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div data-layer="Label" class="Label" style="color: #0A454A; font-size: 11px; font-family: Inter; font-weight: 600; word-wrap: break-word">A different starting point</div>
-      </div>
-      <div data-layer="Experience foundation" class="ExperienceFoundation" style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
-        <div data-layer="Label" class="Label" style="color: #087E82; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">EXPERIENCE I BRING</div>
-        <div data-layer="Title" class="Title" style="align-self: stretch; color: #172D30; font-size: 23px; font-family: Inter; font-weight: 600; line-height: 28.75px; word-wrap: break-word">Customer context. Operational perspective.</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">A background in retail banking customer service, where real people and business processes meet.</div>
-      </div>
-      <div data-layer="Divider" class="Divider" style="align-self: stretch; height: 1px; background: #DAE1DC"></div>
-      <div data-layer="Transition marker" class="TransitionMarker" style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
-        <div data-layer="arrow-down" class="ArrowDown" style="width: 18px; height: 18px; position: relative; overflow: hidden">
-          <div data-layer="Vector" class="Vector" style="width: 10.50px; height: 10.50px; left: 3.75px; top: 3.75px; position: absolute; outline: 1.50px #087E82 solid; outline-offset: -0.75px"></div>
-        </div>
-        <div data-layer="Label" class="Label" style="color: #087E82; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">BUILDING THE ANALYTICAL LAYER</div>
-      </div>
-      <div data-layer="Developing skills" class="DevelopingSkills" style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
-        <div data-layer="Title" class="Title" style="color: #172D30; font-size: 23px; font-family: Inter; font-weight: 600; word-wrap: break-word">From questions to evidence.</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Developing data cleaning, querying, visualization and business storytelling skills.</div>
-      </div>
+    <span class="font-mono-tight text-[10px] text-muted text-center md:text-left">PUP COMPUTER SCIENCE, CLASS OF 2026</span>
+  </div>
+
+  <div class="flex flex-col gap-6">
+    <span class="font-mono-tight text-[11px] text-teal uppercase tracking-wide">00 / Hello</span>
+    <h2 class="text-3xl md:text-[2.6rem] font-semibold leading-tight">Hello! Welcome!</h2>
+    <p class="text-lg leading-relaxed">
+      As you know, I'm Honey Flores — a working student for 4 years, balancing a full-time job in retail banking while maintaining a 1.52 GWA as an SM Foundation Inc. scholar and Priority Muntinlupa Scholar at the Polytechnic University of the Philippines, Computer Science.
+    </p>
+    <p class="text-muted leading-relaxed">
+      Along the way I've worn a lot of different hats: a UI/UX designer, a Product Management intern, team lead for my thesis LORECAST, a front-end developer, and the person who always ends up doing the data cleaning. Juggling a full course load with full-time work taught me how to move between very different kinds of work without dropping either one — and that range is exactly what I bring to a team now.
+    </p>
+
+    <div class="flex flex-wrap gap-2.5 pt-2">
+      <span class="font-mono-tight text-[11px] text-tealdark bg-pill px-3 py-1.5 rounded-full">UI/UX Design</span>
+      <span class="font-mono-tight text-[11px] text-tealdark bg-pill px-3 py-1.5 rounded-full">Product Management</span>
+      <span class="font-mono-tight text-[11px] text-tealdark bg-pill px-3 py-1.5 rounded-full">Team Leadership</span>
+      <span class="font-mono-tight text-[11px] text-tealdark bg-pill px-3 py-1.5 rounded-full">Front-End Development</span>
+      <span class="font-mono-tight text-[11px] text-tealdark bg-pill px-3 py-1.5 rounded-full">Data Cleaning</span>
     </div>
   </div>
-  <div data-layer="Transferable banking strengths" class="TransferableBankingStrengths" style="align-self: stretch; padding-top: 64px; padding-bottom: 80px; padding-left: 80px; padding-right: 80px; background: #EFF2EC; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 36px; display: flex">
-    <div data-layer="Section header" class="SectionHeader" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-end; gap: 80px; display: inline-flex">
-      <div data-layer="Heading group" class="HeadingGroup" style="width: 720px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div data-layer="Section introduction" class="SectionIntroduction" style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
-          <div data-layer="Eyebrow" class="Eyebrow" style="color: #087E82; font-size: 11px; font-family: IBM Plex Mono; font-weight: 500; text-transform: uppercase; word-wrap: break-word">02 / Transferable strengths</div>
-          <div data-layer="Heading" class="Heading" style="align-self: stretch; color: #172D30; font-size: 42px; font-family: Inter; font-weight: 600; line-height: 48.30px; word-wrap: break-word">Banking experience. Analytical potential.</div>
-        </div>
-      </div>
-      <div data-layer="Context" class="Context" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">The business perspective I bring to the learning process — not a substitute for technical evidence.</div>
-      </div>
-    </div>
-    <div data-layer="Strength cards" class="StrengthCards" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
-      <div data-layer="Transferable strength" class="TransferableStrength" style="flex: 1 1 0; align-self: stretch; padding: 24px; background: white; overflow: hidden; border-radius: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: inline-flex">
-        <div data-layer="messages-square" class="MessagesSquare" style="width: 25px; height: 25px; position: relative; overflow: hidden">
-          <div data-layer="Vector" class="Vector" style="width: 20.84px; height: 20.83px; left: 2.08px; top: 2.08px; position: absolute; outline: 1.60px #087E82 solid; outline-offset: -0.80px"></div>
-        </div>
-        <div data-layer="Title" class="Title" style="align-self: stretch; color: #172D30; font-size: 20px; font-family: Inter; font-weight: 600; line-height: 25px; word-wrap: break-word">Customer understanding</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Turn everyday customer questions into useful starting points for analysis.</div>
-        <div data-layer="Connection to analysis" class="ConnectionToAnalysis" style="align-self: stretch; color: #087E82; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; line-height: 16px; word-wrap: break-word">Listen → frame the right question</div>
-      </div>
-      <div data-layer="Transferable strength" class="TransferableStrength" style="flex: 1 1 0; align-self: stretch; padding: 24px; background: white; overflow: hidden; border-radius: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: inline-flex">
-        <div data-layer="workflow" class="Workflow" style="width: 25px; height: 25px; position: relative; overflow: hidden">
-          <div data-layer="Vector" class="Vector" style="width: 18.75px; height: 18.75px; left: 3.13px; top: 3.13px; position: absolute; outline: 1.60px #087E82 solid; outline-offset: -0.80px"></div>
-        </div>
-        <div data-layer="Title" class="Title" style="align-self: stretch; color: #172D30; font-size: 20px; font-family: Inter; font-weight: 600; line-height: 25px; word-wrap: break-word">Operational context</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Consider the processes behind the data, from branch queues to service journeys.</div>
-        <div data-layer="Connection to analysis" class="ConnectionToAnalysis" style="align-self: stretch; color: #087E82; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; line-height: 16px; word-wrap: break-word">Understand → investigate the process</div>
-      </div>
-      <div data-layer="Transferable strength" class="TransferableStrength" style="flex: 1 1 0; align-self: stretch; padding: 24px; background: white; overflow: hidden; border-radius: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: inline-flex">
-        <div data-layer="shield-check" class="ShieldCheck" style="width: 25px; height: 25px; position: relative; overflow: hidden">
-          <div data-layer="Vector" class="Vector" style="width: 16.66px; height: 20.84px; left: 4.17px; top: 2.08px; position: absolute; outline: 1.60px #087E82 solid; outline-offset: -0.80px"></div>
-        </div>
-        <div data-layer="Title" class="Title" style="align-self: stretch; color: #172D30; font-size: 20px; font-family: Inter; font-weight: 600; line-height: 25px; word-wrap: break-word">A responsible data lens</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Treat privacy, accuracy and limitations as part of the analysis, not an afterthought.</div>
-        <div data-layer="Connection to analysis" class="ConnectionToAnalysis" style="align-self: stretch; color: #087E82; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; line-height: 16px; word-wrap: break-word">Check → protect data integrity</div>
-      </div>
-      <div data-layer="Transferable strength" class="TransferableStrength" style="flex: 1 1 0; align-self: stretch; padding: 24px; background: white; overflow: hidden; border-radius: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: inline-flex">
-        <div data-layer="presentation" class="Presentation" style="width: 25px; height: 25px; position: relative; overflow: hidden">
-          <div data-layer="Vector" class="Vector" style="width: 20.84px; height: 18.75px; left: 2.08px; top: 3.13px; position: absolute; outline: 1.60px #087E82 solid; outline-offset: -0.80px"></div>
-        </div>
-        <div data-layer="Title" class="Title" style="align-self: stretch; color: #172D30; font-size: 20px; font-family: Inter; font-weight: 600; line-height: 25px; word-wrap: break-word">Clear communication</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Connect patterns to practical decisions in language a business audience can use.</div>
-        <div data-layer="Connection to analysis" class="ConnectionToAnalysis" style="align-self: stretch; color: #087E82; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; line-height: 16px; word-wrap: break-word">Explain → make insight useful</div>
-      </div>
-    </div>
-  </div>
-  <div data-layer="Featured project case study" class="FeaturedProjectCaseStudy" style="align-self: stretch; padding: 80px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 36px; display: flex">
-    <div data-layer="Featured introduction" class="FeaturedIntroduction" style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: flex-end; display: inline-flex">
-      <div data-layer="Heading" class="Heading" style="width: 850px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div data-layer="Section introduction" class="SectionIntroduction" style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
-          <div data-layer="Eyebrow" class="Eyebrow" style="color: #087E82; font-size: 11px; font-family: IBM Plex Mono; font-weight: 500; text-transform: uppercase; word-wrap: break-word">03 / Featured project blueprint</div>
-          <div data-layer="Heading" class="Heading" style="align-self: stretch; color: #172D30; font-size: 42px; font-family: Inter; font-weight: 600; line-height: 48.30px; word-wrap: break-word">A closer look at branch wait times.</div>
-          <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 26.40px; word-wrap: break-word">A sample case study structure: from a service question to a decision-ready story.</div>
-        </div>
-      </div>
-      <div data-layer="Status" class="Status" style="padding-left: 11px; padding-right: 11px; padding-top: 7px; padding-bottom: 7px; background: #DBEFEB; overflow: hidden; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: flex">
-        <div data-layer="Label" class="Label" style="color: #0A454A; font-size: 11px; font-family: Inter; font-weight: 600; word-wrap: break-word">Sample project concept</div>
-      </div>
-    </div>
-    <div data-layer="Case study" class="CaseStudy" style="align-self: stretch; padding: 32px; background: white; overflow: hidden; border-radius: 20px; outline: 1px #DAE1DC solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 36px; display: flex">
-      <div data-layer="Question and visualization" class="QuestionAndVisualization" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 40px; display: inline-flex">
-        <div data-layer="Project context" class="ProjectContext" style="width: 428px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-          <div data-layer="Case identifier" class="CaseIdentifier" style="color: #788483; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">OPERATIONS / CUSTOMER EXPERIENCE</div>
-          <div data-layer="Business question" class="BusinessQuestion" style="align-self: stretch; color: #172D30; font-size: 32px; font-family: Inter; font-weight: 600; line-height: 36.80px; word-wrap: break-word">Where could branch service feel smoother?</div>
-          <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 26.40px; word-wrap: break-word">Explore how arrival time and service type might relate to wait time — and where a branch team could investigate further.</div>
-          <div data-layer="Divider" class="Divider" style="align-self: stretch; height: 1px; background: #DAE1DC"></div>
-          <div data-layer="Dataset" class="Dataset" style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
-            <div data-layer="Label" class="Label" style="color: #087E82; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">PROPOSED DATASET</div>
-            <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Synthetic visit records: arrival hour, service type, wait duration and branch code. No confidential customer information.</div>
-          </div>
-        </div>
-        <div data-layer="Sample branch dashboard" class="SampleBranchDashboard" style="flex: 1 1 0; padding: 32px; background: #EFF2EC; overflow: hidden; border-radius: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 22px; display: inline-flex">
-          <div data-layer="Dashboard heading" class="DashboardHeading" style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: flex-start; display: inline-flex">
-            <div data-layer="Chart introduction" class="ChartIntroduction" style="overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-              <div data-layer="Chart label" class="ChartLabel" style="color: #087E82; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">BRANCH SERVICE / VISUALIZATION CONCEPT</div>
-              <div data-layer="Chart title" class="ChartTitle" style="color: #172D30; font-size: 22px; font-family: Inter; font-weight: 600; word-wrap: break-word">Average wait by arrival hour</div>
-              <div data-layer="Chart unit" class="ChartUnit" style="color: #58696B; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Wait time in minutes · synthetic visits</div>
-            </div>
-            <div data-layer="Status" class="Status" style="padding-left: 11px; padding-right: 11px; padding-top: 7px; padding-bottom: 7px; background: #DBEFEB; overflow: hidden; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: flex">
-              <div data-layer="Label" class="Label" style="color: #0A454A; font-size: 11px; font-family: Inter; font-weight: 600; word-wrap: break-word">Illustrative</div>
-            </div>
-          </div>
-          <div data-layer="Column chart" class="ColumnChart" style="width: 684px; height: 238px; position: relative; overflow: hidden">
-            <div data-layer="Data column" class="DataColumn" style="width: 64px; height: 238px; left: 573px; top: 0px; position: absolute; overflow: hidden">
-              <div data-layer="Arrival hour" class="ArrivalHour" style="left: 10px; top: 207px; position: absolute; color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">14–15</div>
-              <div data-layer="Illustrative value" class="IllustrativeValue" style="left: 23px; top: 78.40px; position: absolute; color: #0A454A; font-size: 12px; font-family: IBM Plex Mono; font-weight: 500; word-wrap: break-word">8</div>
-              <div data-layer="Wait time bar" class="WaitTimeBar" style="width: 64px; height: 89.60px; left: 0px; top: 100.40px; position: absolute; background: #90C4B9; border-top-left-radius: 4px; border-top-right-radius: 4px"></div>
-            </div>
-            <div data-layer="Data column" class="DataColumn" style="width: 64px; height: 238px; left: 468px; top: 0px; position: absolute; overflow: hidden">
-              <div data-layer="Arrival hour" class="ArrivalHour" style="left: 10px; top: 207px; position: absolute; color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">13–14</div>
-              <div data-layer="Illustrative value" class="IllustrativeValue" style="left: 23px; top: 44.80px; position: absolute; color: #0A454A; font-size: 12px; font-family: IBM Plex Mono; font-weight: 500; word-wrap: break-word">11</div>
-              <div data-layer="Wait time bar" class="WaitTimeBar" style="width: 64px; height: 123.20px; left: 0px; top: 66.80px; position: absolute; background: #90C4B9; border-top-left-radius: 4px; border-top-right-radius: 4px"></div>
-            </div>
-            <div data-layer="Data column" class="DataColumn" style="width: 64px; height: 238px; left: 363px; top: 0px; position: absolute; overflow: hidden">
-              <div data-layer="Arrival hour" class="ArrivalHour" style="left: 10px; top: 207px; position: absolute; color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">12–13</div>
-              <div data-layer="Illustrative value" class="IllustrativeValue" style="left: 23px; top: 11.20px; position: absolute; color: #0A454A; font-size: 12px; font-family: IBM Plex Mono; font-weight: 500; word-wrap: break-word">14</div>
-              <div data-layer="Wait time bar" class="WaitTimeBar" style="width: 64px; height: 156.80px; left: 0px; top: 33.20px; position: absolute; background: #087E82; border-top-left-radius: 4px; border-top-right-radius: 4px"></div>
-            </div>
-            <div data-layer="Data column" class="DataColumn" style="width: 64px; height: 238px; left: 258px; top: 0px; position: absolute; overflow: hidden">
-              <div data-layer="Arrival hour" class="ArrivalHour" style="left: 10px; top: 207px; position: absolute; color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">11–12</div>
-              <div data-layer="Illustrative value" class="IllustrativeValue" style="left: 23px; top: 33.60px; position: absolute; color: #0A454A; font-size: 12px; font-family: IBM Plex Mono; font-weight: 500; word-wrap: break-word">12</div>
-              <div data-layer="Wait time bar" class="WaitTimeBar" style="width: 64px; height: 134.40px; left: 0px; top: 55.60px; position: absolute; background: #90C4B9; border-top-left-radius: 4px; border-top-right-radius: 4px"></div>
-            </div>
-            <div data-layer="Data column" class="DataColumn" style="width: 64px; height: 238px; left: 153px; top: 0px; position: absolute; overflow: hidden">
-              <div data-layer="Arrival hour" class="ArrivalHour" style="left: 10px; top: 207px; position: absolute; color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">10–11</div>
-              <div data-layer="Illustrative value" class="IllustrativeValue" style="left: 23px; top: 67.20px; position: absolute; color: #0A454A; font-size: 12px; font-family: IBM Plex Mono; font-weight: 500; word-wrap: break-word">9</div>
-              <div data-layer="Wait time bar" class="WaitTimeBar" style="width: 64px; height: 100.80px; left: 0px; top: 89.20px; position: absolute; background: #90C4B9; border-top-left-radius: 4px; border-top-right-radius: 4px"></div>
-            </div>
-            <div data-layer="Data column" class="DataColumn" style="width: 64px; height: 238px; left: 48px; top: 0px; position: absolute; overflow: hidden">
-              <div data-layer="Arrival hour" class="ArrivalHour" style="left: 10px; top: 207px; position: absolute; color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">09–10</div>
-              <div data-layer="Illustrative value" class="IllustrativeValue" style="left: 23px; top: 100.80px; position: absolute; color: #0A454A; font-size: 12px; font-family: IBM Plex Mono; font-weight: 500; word-wrap: break-word">6</div>
-              <div data-layer="Wait time bar" class="WaitTimeBar" style="width: 64px; height: 67.20px; left: 0px; top: 122.80px; position: absolute; background: #90C4B9; border-top-left-radius: 4px; border-top-right-radius: 4px"></div>
-            </div>
-            <div data-layer="Axis guide" class="AxisGuide" style="width: 684px; height: 15px; left: 0px; top: 22px; position: absolute">
-              <div data-layer="Gridline" class="Gridline" style="width: 654px; height: 1px; left: 30px; top: 0px; position: absolute; background: #DAE1DC"></div>
-              <div data-layer="Axis tick" class="AxisTick" style="left: 0px; top: -5px; position: absolute; color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">15</div>
-            </div>
-            <div data-layer="Axis guide" class="AxisGuide" style="width: 684px; height: 15px; left: 0px; top: 78px; position: absolute">
-              <div data-layer="Gridline" class="Gridline" style="width: 654px; height: 1px; left: 30px; top: 0px; position: absolute; background: #DAE1DC"></div>
-              <div data-layer="Axis tick" class="AxisTick" style="left: 0px; top: -5px; position: absolute; color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">10</div>
-            </div>
-            <div data-layer="Axis guide" class="AxisGuide" style="width: 684px; height: 15px; left: 0px; top: 134px; position: absolute">
-              <div data-layer="Gridline" class="Gridline" style="width: 654px; height: 1px; left: 30px; top: 0px; position: absolute; background: #DAE1DC"></div>
-              <div data-layer="Axis tick" class="AxisTick" style="left: 0px; top: -5px; position: absolute; color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">5</div>
-            </div>
-            <div data-layer="Axis guide" class="AxisGuide" style="width: 684px; height: 15px; left: 0px; top: 190px; position: absolute">
-              <div data-layer="Gridline" class="Gridline" style="width: 654px; height: 1px; left: 30px; top: 0px; position: absolute; background: #DAE1DC"></div>
-              <div data-layer="Axis tick" class="AxisTick" style="left: 0px; top: -5px; position: absolute; color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">0</div>
-            </div>
-          </div>
-          <div data-layer="Divider" class="Divider" style="align-self: stretch; height: 1px; background: #DAE1DC"></div>
-          <div data-layer="Data disclosure" class="DataDisclosure" style="align-self: stretch; color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; line-height: 16px; word-wrap: break-word">ILLUSTRATIVE / SYNTHETIC DATA ONLY. No real branch or customer data; not a validated finding.</div>
-        </div>
-      </div>
-      <div data-layer="Divider" class="Divider" style="align-self: stretch; height: 1px; background: #DAE1DC"></div>
-      <div data-layer="Case study plan" class="CaseStudyPlan" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
-        <div data-layer="Case study detail" class="CaseStudyDetail" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
-          <div data-layer="Detail label" class="DetailLabel" style="color: #087E82; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">01 / ANALYSIS PLAN</div>
-          <div data-layer="Detail title" class="DetailTitle" style="align-self: stretch; color: #172D30; font-size: 20px; font-family: Inter; font-weight: 600; line-height: 26px; word-wrap: break-word">Check the pattern, not just the average.</div>
-          <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Clean missing values; compare median and upper-percentile waits by hour and service type. Document assumptions and outliers.</div>
-        </div>
-        <div data-layer="Case study detail" class="CaseStudyDetail" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
-          <div data-layer="Detail label" class="DetailLabel" style="color: #087E82; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">02 / FINDINGS TO VALIDATE</div>
-          <div data-layer="Detail title" class="DetailTitle" style="align-self: stretch; color: #172D30; font-size: 20px; font-family: Inter; font-weight: 600; line-height: 26px; word-wrap: break-word">Let the evidence lead.</div>
-          <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Hypothesis to test: do midday arrivals coincide with longer waits? [Replace with validated findings and limitations.]</div>
-        </div>
-        <div data-layer="Case study detail" class="CaseStudyDetail" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
-          <div data-layer="Detail label" class="DetailLabel" style="color: #087E82; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">03 / RECOMMENDATIONS</div>
-          <div data-layer="Detail title" class="DetailTitle" style="align-self: stretch; color: #172D30; font-size: 20px; font-family: Inter; font-weight: 600; line-height: 26px; word-wrap: break-word">Make the next step testable.</div>
-          <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">If the evidence supports it, propose a staffing or queue-management pilot. [Add your recommendation, rationale and success measure.]</div>
-        </div>
-      </div>
-      <div data-layer="Case study resources" class="CaseStudyResources" style="align-self: stretch; padding-top: 18px; overflow: hidden; border-top: 1px #DAE1DC solid; justify-content: space-between; align-items: center; display: inline-flex">
-        <div data-layer="Progress label" class="ProgressLabel" style="color: #58696B; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Concept only · replace with your own completed analysis</div>
-        <div data-layer="Case study link placeholder" class="CaseStudyLinkPlaceholder" style="color: #087E82; font-size: 13px; font-family: Inter; font-weight: 600; word-wrap: break-word">Case study [add link] ↗</div>
-      </div>
-    </div>
-  </div>
-  <div data-layer="Further project examples" class="FurtherProjectExamples" style="align-self: stretch; padding-bottom: 80px; padding-left: 80px; padding-right: 80px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 36px; display: flex">
-    <div data-layer="Section introduction" class="SectionIntroduction" style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
-      <div data-layer="Eyebrow" class="Eyebrow" style="color: #087E82; font-size: 11px; font-family: IBM Plex Mono; font-weight: 500; text-transform: uppercase; word-wrap: break-word">04 / More questions to explore</div>
-      <div data-layer="Heading" class="Heading" style="align-self: stretch; color: #172D30; font-size: 42px; font-family: Inter; font-weight: 600; line-height: 48.30px; word-wrap: break-word">Small projects. Meaningful business questions.</div>
-      <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 26.40px; word-wrap: break-word">Ideas for building a portfolio using public or synthetic banking datasets. Replace each concept with your own work.</div>
-    </div>
-    <div data-layer="Project concepts" class="ProjectConcepts" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-      <div data-layer="Project concept" class="ProjectConcept" style="flex: 1 1 0; align-self: stretch; background: white; overflow: hidden; border-radius: 12px; outline: 1px #DAE1DC solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div data-layer="Illustrative project visualization" class="IllustrativeProjectVisualization" style="align-self: stretch; height: 196px; padding: 24px; background: #EFF2EC; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 14px; display: flex">
-          <div data-layer="Data label" class="DataLabel" style="color: #58696B; font-size: 9px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">ILLUSTRATIVE / SYNTHETIC DATA</div>
-          <div data-layer="Chart" class="Chart" style="width: 342px; height: 126px; position: relative; overflow: hidden">
-            <div data-layer="Category bar" class="CategoryBar" style="width: 342px; height: 20px; left: 0px; top: 87px; position: absolute; overflow: hidden">
-              <div data-layer="Sample bar" class="SampleBar" style="width: 260px; height: 17px; left: 64px; top: 0px; position: absolute; background: #90C4B9; border-radius: 3px"></div>
-              <div data-layer="Bar remainder" class="BarRemainder" style="width: 15px; height: 17px; left: 327px; top: 0px; position: absolute; background: #DAE1DC; border-radius: 3px"></div>
-              <div data-layer="Category" class="Category" style="left: 0px; top: 4px; position: absolute; color: #58696B; font-size: 9px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">Mobile</div>
-            </div>
-            <div data-layer="Category bar" class="CategoryBar" style="width: 342px; height: 20px; left: 0px; top: 58px; position: absolute; overflow: hidden">
-              <div data-layer="Sample bar" class="SampleBar" style="width: 180px; height: 17px; left: 64px; top: 0px; position: absolute; background: #90C4B9; border-radius: 3px"></div>
-              <div data-layer="Bar remainder" class="BarRemainder" style="width: 95px; height: 17px; left: 247px; top: 0px; position: absolute; background: #DAE1DC; border-radius: 3px"></div>
-              <div data-layer="Category" class="Category" style="left: 0px; top: 4px; position: absolute; color: #58696B; font-size: 9px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">Online</div>
-            </div>
-            <div data-layer="Category bar" class="CategoryBar" style="width: 342px; height: 20px; left: 0px; top: 29px; position: absolute; overflow: hidden">
-              <div data-layer="Sample bar" class="SampleBar" style="width: 228px; height: 17px; left: 64px; top: 0px; position: absolute; background: #90C4B9; border-radius: 3px"></div>
-              <div data-layer="Bar remainder" class="BarRemainder" style="width: 47px; height: 17px; left: 295px; top: 0px; position: absolute; background: #DAE1DC; border-radius: 3px"></div>
-              <div data-layer="Category" class="Category" style="left: 0px; top: 4px; position: absolute; color: #58696B; font-size: 9px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">Phone</div>
-            </div>
-            <div data-layer="Category bar" class="CategoryBar" style="width: 342px; height: 20px; left: 0px; top: 0px; position: absolute; overflow: hidden">
-              <div data-layer="Sample bar" class="SampleBar" style="width: 132px; height: 17px; left: 64px; top: 0px; position: absolute; background: #087E82; border-radius: 3px"></div>
-              <div data-layer="Bar remainder" class="BarRemainder" style="width: 143px; height: 17px; left: 199px; top: 0px; position: absolute; background: #DAE1DC; border-radius: 3px"></div>
-              <div data-layer="Category" class="Category" style="left: 0px; top: 4px; position: absolute; color: #58696B; font-size: 9px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">Branch</div>
-            </div>
-          </div>
-        </div>
-        <div data-layer="Project details" class="ProjectDetails" style="align-self: stretch; padding: 24px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
-          <div data-layer="Status" class="Status" style="padding-left: 11px; padding-right: 11px; padding-top: 7px; padding-bottom: 7px; background: #DBEFEB; overflow: hidden; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-            <div data-layer="Label" class="Label" style="color: #0A454A; font-size: 11px; font-family: Inter; font-weight: 600; word-wrap: break-word">Sample project concept</div>
-          </div>
-          <div data-layer="Category" class="Category" style="color: #087E82; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">CUSTOMER SATISFACTION</div>
-          <div data-layer="Business question" class="BusinessQuestion" style="align-self: stretch; color: #172D30; font-size: 24px; font-family: Inter; font-weight: 600; line-height: 29.28px; word-wrap: break-word">What shapes a good service experience?</div>
-          <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Compare satisfaction responses across channels and service types to identify questions worth investigating.</div>
-          <div data-layer="Dataset" class="Dataset" style="align-self: stretch; color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; line-height: 16px; word-wrap: break-word">Proposed: synthetic survey responses</div>
-          <div data-layer="Project link placeholder" class="ProjectLinkPlaceholder" style="color: #087E82; font-size: 13px; font-family: Inter; font-weight: 600; word-wrap: break-word">Project brief [add link] ↗</div>
-        </div>
-      </div>
-      <div data-layer="Project concept" class="ProjectConcept" style="flex: 1 1 0; align-self: stretch; background: white; overflow: hidden; border-radius: 12px; outline: 1px #DAE1DC solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div data-layer="Illustrative project visualization" class="IllustrativeProjectVisualization" style="align-self: stretch; height: 196px; padding: 24px; background: #EFF2EC; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 14px; display: flex">
-          <div data-layer="Data label" class="DataLabel" style="color: #58696B; font-size: 9px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">ILLUSTRATIVE / SYNTHETIC DATA</div>
-          <div data-layer="Chart" class="Chart" style="width: 342px; height: 126px; position: relative; overflow: hidden">
-            <div data-layer="Second category trend" class="SecondCategoryTrend" style="width: 342px; height: 102px; left: 0px; top: 12px; position: absolute; border: 2px #90C4B9 solid"></div>
-            <div data-layer="Complaint volume trend" class="ComplaintVolumeTrend" style="width: 342px; height: 102px; left: 0px; top: 12px; position: absolute; border: 2.50px #087E82 solid"></div>
-            <div data-layer="Gridline" class="Gridline" style="width: 342px; height: 1px; left: 0px; top: 120px; position: absolute; background: #DAE1DC"></div>
-            <div data-layer="Gridline" class="Gridline" style="width: 342px; height: 1px; left: 0px; top: 84px; position: absolute; background: #DAE1DC"></div>
-            <div data-layer="Gridline" class="Gridline" style="width: 342px; height: 1px; left: 0px; top: 48px; position: absolute; background: #DAE1DC"></div>
-            <div data-layer="Gridline" class="Gridline" style="width: 342px; height: 1px; left: 0px; top: 12px; position: absolute; background: #DAE1DC"></div>
-          </div>
-        </div>
-        <div data-layer="Project details" class="ProjectDetails" style="align-self: stretch; padding: 24px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
-          <div data-layer="Status" class="Status" style="padding-left: 11px; padding-right: 11px; padding-top: 7px; padding-bottom: 7px; background: #DBEFEB; overflow: hidden; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-            <div data-layer="Label" class="Label" style="color: #0A454A; font-size: 11px; font-family: Inter; font-weight: 600; word-wrap: break-word">Sample project concept</div>
-          </div>
-          <div data-layer="Category" class="Category" style="color: #087E82; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">COMPLAINT TRENDS</div>
-          <div data-layer="Business question" class="BusinessQuestion" style="align-self: stretch; color: #172D30; font-size: 24px; font-family: Inter; font-weight: 600; line-height: 29.28px; word-wrap: break-word">From recurring complaints to useful signals.</div>
-          <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Explore complaint categories over time and distinguish recurring themes from short-term changes.</div>
-          <div data-layer="Dataset" class="Dataset" style="align-self: stretch; color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; line-height: 16px; word-wrap: break-word">Proposed: public complaint records</div>
-          <div data-layer="Project link placeholder" class="ProjectLinkPlaceholder" style="color: #087E82; font-size: 13px; font-family: Inter; font-weight: 600; word-wrap: break-word">Project brief [add link] ↗</div>
-        </div>
-      </div>
-      <div data-layer="Project concept" class="ProjectConcept" style="flex: 1 1 0; align-self: stretch; background: white; overflow: hidden; border-radius: 12px; outline: 1px #DAE1DC solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div data-layer="Illustrative project visualization" class="IllustrativeProjectVisualization" style="align-self: stretch; height: 196px; padding: 24px; background: #EFF2EC; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 14px; display: flex">
-          <div data-layer="Data label" class="DataLabel" style="color: #58696B; font-size: 9px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">ILLUSTRATIVE / SYNTHETIC DATA</div>
-          <div data-layer="Chart" class="Chart" style="width: 342px; height: 126px; position: relative; overflow: hidden">
-            <div data-layer="Legend marker" class="LegendMarker" style="width: 7px; height: 7px; left: 134px; top: 55px; position: absolute; background: #C6E0D6"></div>
-            <div data-layer="Legend marker" class="LegendMarker" style="width: 7px; height: 7px; left: 134px; top: 23px; position: absolute; background: #087E82"></div>
-            <div data-layer="Legend label" class="LegendLabel" style="width: 182px; left: 150px; top: 85px; position: absolute; color: #58696B; font-size: 10px; font-family: Inter; font-weight: 400; word-wrap: break-word">Compare by service experience</div>
-            <div data-layer="Legend label" class="LegendLabel" style="width: 182px; left: 150px; top: 53px; position: absolute; color: #58696B; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Departed</div>
-            <div data-layer="Legend label" class="LegendLabel" style="width: 182px; left: 150px; top: 21px; position: absolute; color: #58696B; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Retained</div>
-            <div data-layer="Cohort label" class="CohortLabel" style="left: 32px; top: 51px; position: absolute; color: #0A454A; font-size: 9px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">COHORT</div>
-            <div data-layer="Illustrative cohort share" class="IllustrativeCohortShare" style="width: 112px; height: 112px; left: 6px; top: 3px; position: absolute; background: #087E82; border-radius: 9999px"></div>
-            <div data-layer="Cohort remainder" class="CohortRemainder" style="width: 112px; height: 112px; left: 6px; top: 3px; position: absolute; background: #C6E0D6; border-radius: 9999px"></div>
-          </div>
-        </div>
-        <div data-layer="Project details" class="ProjectDetails" style="align-self: stretch; padding: 24px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
-          <div data-layer="Status" class="Status" style="padding-left: 11px; padding-right: 11px; padding-top: 7px; padding-bottom: 7px; background: #DBEFEB; overflow: hidden; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-            <div data-layer="Label" class="Label" style="color: #0A454A; font-size: 11px; font-family: Inter; font-weight: 600; word-wrap: break-word">Sample project concept</div>
-          </div>
-          <div data-layer="Category" class="Category" style="color: #087E82; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">CUSTOMER RETENTION</div>
-          <div data-layer="Business question" class="BusinessQuestion" style="align-self: stretch; color: #172D30; font-size: 24px; font-family: Inter; font-weight: 600; line-height: 29.28px; word-wrap: break-word">Understanding the signals before customers leave.</div>
-          <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Explore associations between service experience and retention, without treating correlation as causation.</div>
-          <div data-layer="Dataset" class="Dataset" style="align-self: stretch; color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; line-height: 16px; word-wrap: break-word">Proposed: synthetic customer cohorts</div>
-          <div data-layer="Project link placeholder" class="ProjectLinkPlaceholder" style="color: #087E82; font-size: 13px; font-family: Inter; font-weight: 600; word-wrap: break-word">Project brief [add link] ↗</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div data-layer="Analytical skills and tools" class="AnalyticalSkillsAndTools" style="align-self: stretch; padding: 80px; background: #0A454A; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 36px; display: flex">
-    <div data-layer="Skills introduction" class="SkillsIntroduction" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-end; gap: 100px; display: inline-flex">
-      <div data-layer="Heading" class="Heading" style="width: 680px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div data-layer="Section introduction" class="SectionIntroduction" style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
-          <div data-layer="Eyebrow" class="Eyebrow" style="color: #A9CAC6; font-size: 11px; font-family: IBM Plex Mono; font-weight: 500; text-transform: uppercase; word-wrap: break-word">05 / Skills in development</div>
-          <div data-layer="Heading" class="Heading" style="align-self: stretch; color: #F3F8F4; font-size: 42px; font-family: Inter; font-weight: 600; line-height: 48.30px; word-wrap: break-word">Building the toolkit. Keeping the business in view.</div>
-        </div>
-      </div>
-      <div data-layer="Skills context" class="SkillsContext" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #A9CAC6; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Suggested tools to customize — not claims of proficiency. Add your current level and link to work that shows what you can do.</div>
-      </div>
-    </div>
-    <div data-layer="Suggested toolkit" class="SuggestedToolkit" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
-      <div data-layer="Tool" class="Tool" style="flex: 1 1 0; align-self: stretch; padding: 22px; overflow: hidden; border-radius: 12px; outline: 1px rgba(255, 255, 255, 0.19) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: inline-flex">
-        <div data-layer="Tool monogram" class="ToolMonogram" style="width: 44px; height: 38px; background: rgba(255, 255, 255, 0.05); overflow: hidden; border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
-          <div data-layer="Abbreviation" class="Abbreviation" style="color: #C6E0D6; font-size: 12px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">XLS</div>
-        </div>
-        <div data-layer="Tool name" class="ToolName" style="color: #F3F8F4; font-size: 23px; font-family: Inter; font-weight: 500; word-wrap: break-word">Excel</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #A9CAC6; font-size: 13px; font-family: Inter; font-weight: 400; line-height: 21.45px; word-wrap: break-word">Clean tables, check formulas and explore with pivot tables.</div>
-        <div data-layer="Proficiency placeholder" class="ProficiencyPlaceholder" style="align-self: stretch; color: #C6E0D6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; line-height: 16px; word-wrap: break-word">[Add level + evidence]</div>
-      </div>
-      <div data-layer="Tool" class="Tool" style="flex: 1 1 0; align-self: stretch; padding: 22px; overflow: hidden; border-radius: 12px; outline: 1px rgba(255, 255, 255, 0.19) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: inline-flex">
-        <div data-layer="Tool monogram" class="ToolMonogram" style="width: 44px; height: 38px; background: rgba(255, 255, 255, 0.05); overflow: hidden; border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
-          <div data-layer="Abbreviation" class="Abbreviation" style="color: #C6E0D6; font-size: 12px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">SQL</div>
-        </div>
-        <div data-layer="Tool name" class="ToolName" style="color: #F3F8F4; font-size: 23px; font-family: Inter; font-weight: 500; word-wrap: break-word">SQL</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #A9CAC6; font-size: 13px; font-family: Inter; font-weight: 400; line-height: 21.45px; word-wrap: break-word">Filter, join and aggregate data around business questions.</div>
-        <div data-layer="Proficiency placeholder" class="ProficiencyPlaceholder" style="align-self: stretch; color: #C6E0D6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; line-height: 16px; word-wrap: break-word">[Add level + evidence]</div>
-      </div>
-      <div data-layer="Tool" class="Tool" style="flex: 1 1 0; align-self: stretch; padding: 22px; overflow: hidden; border-radius: 12px; outline: 1px rgba(255, 255, 255, 0.19) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: inline-flex">
-        <div data-layer="Tool monogram" class="ToolMonogram" style="width: 44px; height: 38px; background: rgba(255, 255, 255, 0.05); overflow: hidden; border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
-          <div data-layer="Abbreviation" class="Abbreviation" style="color: #C6E0D6; font-size: 12px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">PBI</div>
-        </div>
-        <div data-layer="Tool name" class="ToolName" style="color: #F3F8F4; font-size: 23px; font-family: Inter; font-weight: 500; word-wrap: break-word">Power BI</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #A9CAC6; font-size: 13px; font-family: Inter; font-weight: 400; line-height: 21.45px; word-wrap: break-word">Model data and create focused, interactive dashboards.</div>
-        <div data-layer="Proficiency placeholder" class="ProficiencyPlaceholder" style="align-self: stretch; color: #C6E0D6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; line-height: 16px; word-wrap: break-word">[Add level + evidence]</div>
-      </div>
-      <div data-layer="Tool" class="Tool" style="flex: 1 1 0; align-self: stretch; padding: 22px; overflow: hidden; border-radius: 12px; outline: 1px rgba(255, 255, 255, 0.19) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: inline-flex">
-        <div data-layer="Tool monogram" class="ToolMonogram" style="width: 44px; height: 38px; background: rgba(255, 255, 255, 0.05); overflow: hidden; border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
-          <div data-layer="Abbreviation" class="Abbreviation" style="color: #C6E0D6; font-size: 12px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">TAB</div>
-        </div>
-        <div data-layer="Tool name" class="ToolName" style="color: #F3F8F4; font-size: 23px; font-family: Inter; font-weight: 500; word-wrap: break-word">Tableau</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #A9CAC6; font-size: 13px; font-family: Inter; font-weight: 400; line-height: 21.45px; word-wrap: break-word">Explore patterns and communicate them visually.</div>
-        <div data-layer="Proficiency placeholder" class="ProficiencyPlaceholder" style="align-self: stretch; color: #C6E0D6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; line-height: 16px; word-wrap: break-word">[Add level + evidence]</div>
-      </div>
-      <div data-layer="Tool" class="Tool" style="flex: 1 1 0; align-self: stretch; padding: 22px; overflow: hidden; border-radius: 12px; outline: 1px rgba(255, 255, 255, 0.19) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: inline-flex">
-        <div data-layer="Tool monogram" class="ToolMonogram" style="width: 44px; height: 38px; background: rgba(255, 255, 255, 0.05); overflow: hidden; border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
-          <div data-layer="Abbreviation" class="Abbreviation" style="color: #C6E0D6; font-size: 12px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">PY</div>
-        </div>
-        <div data-layer="Tool name" class="ToolName" style="color: #F3F8F4; font-size: 23px; font-family: Inter; font-weight: 500; word-wrap: break-word">Python</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #A9CAC6; font-size: 13px; font-family: Inter; font-weight: 400; line-height: 21.45px; word-wrap: break-word">Practice repeatable data preparation and exploration.</div>
-        <div data-layer="Proficiency placeholder" class="ProficiencyPlaceholder" style="align-self: stretch; color: #C6E0D6; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; line-height: 16px; word-wrap: break-word">[Add level + evidence]</div>
-      </div>
-    </div>
-    <div data-layer="Learning evidence" class="LearningEvidence" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
-      <div data-layer="Accent rule" class="AccentRule" style="width: 32px; height: 2px; background: #90C4B9"></div>
-      <div data-layer="Learning record placeholder" class="LearningRecordPlaceholder" style="flex: 1 1 0; color: #A9CAC6; font-size: 13px; font-family: Inter; font-weight: 400; line-height: 20.80px; word-wrap: break-word">Learning record: [Add courses, qualifications or practice work you have actually completed.]</div>
-    </div>
-  </div>
-  <div data-layer="Retail banking experience" class="RetailBankingExperience" style="align-self: stretch; padding: 80px; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 100px; display: inline-flex">
-    <div data-layer="Experience introduction" class="ExperienceIntroduction" style="width: 390px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-      <div data-layer="Section introduction" class="SectionIntroduction" style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
-        <div data-layer="Eyebrow" class="Eyebrow" style="color: #087E82; font-size: 11px; font-family: IBM Plex Mono; font-weight: 500; text-transform: uppercase; word-wrap: break-word">06 / Business experience</div>
-        <div data-layer="Heading" class="Heading" style="align-self: stretch; color: #172D30; font-size: 42px; font-family: Inter; font-weight: 600; line-height: 48.30px; word-wrap: break-word">A foundation in customer service.</div>
-      </div>
-      <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 26.40px; word-wrap: break-word">The experience behind my analytical perspective. Add the details that reflect your own role and responsibilities.</div>
-      <div data-layer="Status" class="Status" style="padding-left: 11px; padding-right: 11px; padding-top: 7px; padding-bottom: 7px; background: #DBEFEB; overflow: hidden; border-radius: 100px; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div data-layer="Label" class="Label" style="color: #0A454A; font-size: 11px; font-family: Inter; font-weight: 600; word-wrap: break-word">Retail banking background</div>
-      </div>
-    </div>
-    <div data-layer="Experience entry" class="ExperienceEntry" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-      <div data-layer="Divider" class="Divider" style="align-self: stretch; height: 1px; background: #DAE1DC"></div>
-      <div data-layer="Role heading" class="RoleHeading" style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: flex-start; display: inline-flex">
-        <div data-layer="Role details" class="RoleDetails" style="overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
-          <div data-layer="Role title" class="RoleTitle" style="color: #172D30; font-size: 27px; font-family: Inter; font-weight: 600; word-wrap: break-word">Retail banking customer service</div>
-          <div data-layer="Employer placeholder" class="EmployerPlaceholder" style="color: #58696B; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word">[Employer / bank name] · [Your exact role]</div>
-        </div>
-        <div data-layer="Dates placeholder" class="DatesPlaceholder" style="color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">[START – END]</div>
-      </div>
-      <div data-layer="Customization instruction" class="CustomizationInstruction" style="align-self: stretch; color: #58696B; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Customize with responsibilities you actually held:</div>
-      <div data-layer="Responsibility" class="Responsibility" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 14px; display: inline-flex">
-        <div data-layer="arrow-right" class="ArrowRight" style="width: 17px; height: 17px; position: relative; overflow: hidden">
-          <div data-layer="Vector" class="Vector" style="width: 9.92px; height: 9.92px; left: 3.54px; top: 3.54px; position: absolute; outline: 1.60px #087E82 solid; outline-offset: -0.80px"></div>
-        </div>
-        <div data-layer="Responsibility detail" class="ResponsibilityDetail" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: inline-flex">
-          <div data-layer="Title" class="Title" style="color: #172D30; font-size: 15px; font-family: Inter; font-weight: 600; word-wrap: break-word">Customer support</div>
-          <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 13px; font-family: Inter; font-weight: 400; line-height: 21.45px; word-wrap: break-word">[Describe the queries, channels and customer needs you supported.]</div>
-        </div>
-      </div>
-      <div data-layer="Responsibility" class="Responsibility" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 14px; display: inline-flex">
-        <div data-layer="arrow-right" class="ArrowRight" style="width: 17px; height: 17px; position: relative; overflow: hidden">
-          <div data-layer="Vector" class="Vector" style="width: 9.92px; height: 9.92px; left: 3.54px; top: 3.54px; position: absolute; outline: 1.60px #087E82 solid; outline-offset: -0.80px"></div>
-        </div>
-        <div data-layer="Responsibility detail" class="ResponsibilityDetail" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: inline-flex">
-          <div data-layer="Title" class="Title" style="color: #172D30; font-size: 15px; font-family: Inter; font-weight: 600; word-wrap: break-word">Banking operations</div>
-          <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 13px; font-family: Inter; font-weight: 400; line-height: 21.45px; word-wrap: break-word">[Add the processes you handled and your role in keeping them accurate.]</div>
-        </div>
-      </div>
-      <div data-layer="Responsibility" class="Responsibility" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 14px; display: inline-flex">
-        <div data-layer="arrow-right" class="ArrowRight" style="width: 17px; height: 17px; position: relative; overflow: hidden">
-          <div data-layer="Vector" class="Vector" style="width: 9.92px; height: 9.92px; left: 3.54px; top: 3.54px; position: absolute; outline: 1.60px #087E82 solid; outline-offset: -0.80px"></div>
-        </div>
-        <div data-layer="Responsibility detail" class="ResponsibilityDetail" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: inline-flex">
-          <div data-layer="Title" class="Title" style="color: #172D30; font-size: 15px; font-family: Inter; font-weight: 600; word-wrap: break-word">Communication and resolution</div>
-          <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 13px; font-family: Inter; font-weight: 400; line-height: 21.45px; word-wrap: break-word">[Add a specific example; include an outcome only if you can verify it.]</div>
-        </div>
-      </div>
-      <div data-layer="Divider" class="Divider" style="align-self: stretch; height: 1px; background: #DAE1DC"></div>
-    </div>
-  </div>
-  <div data-layer="Approach to business questions" class="ApproachToBusinessQuestions" style="align-self: stretch; padding-top: 64px; padding-bottom: 80px; padding-left: 80px; padding-right: 80px; background: #EFF2EC; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: flex">
-    <div data-layer="Approach introduction" class="ApproachIntroduction" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-end; gap: 100px; display: inline-flex">
-      <div data-layer="Heading" class="Heading" style="width: 750px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div data-layer="Section introduction" class="SectionIntroduction" style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
-          <div data-layer="Eyebrow" class="Eyebrow" style="color: #087E82; font-size: 11px; font-family: IBM Plex Mono; font-weight: 500; text-transform: uppercase; word-wrap: break-word">07 / My intended approach</div>
-          <div data-layer="Heading" class="Heading" style="align-self: stretch; color: #172D30; font-size: 42px; font-family: Inter; font-weight: 600; line-height: 48.30px; word-wrap: break-word">Better questions. Clearer decisions.</div>
-        </div>
-      </div>
-      <div data-layer="Approach context" class="ApproachContext" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">A practical framework I’m developing, with business relevance and responsible data use at every step.</div>
-      </div>
-    </div>
-    <div data-layer="Analysis process" class="AnalysisProcess" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
-      <div data-layer="Process step" class="ProcessStep" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: inline-flex">
-        <div data-layer="Step marker" class="StepMarker" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
-          <div data-layer="Step number" class="StepNumber" style="color: #087E82; font-size: 28px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">01</div>
-          <div data-layer="Connector" class="Connector" style="flex: 1 1 0; height: 1px; background: #DAE1DC"></div>
-        </div>
-        <div data-layer="Step title" class="StepTitle" style="align-self: stretch; color: #172D30; font-size: 21px; font-family: Inter; font-weight: 600; word-wrap: break-word">Frame the question</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Clarify the decision, the audience and what a useful answer would look like.</div>
-      </div>
-      <div data-layer="Process step" class="ProcessStep" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: inline-flex">
-        <div data-layer="Step marker" class="StepMarker" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
-          <div data-layer="Step number" class="StepNumber" style="color: #087E82; font-size: 28px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">02</div>
-          <div data-layer="Connector" class="Connector" style="flex: 1 1 0; height: 1px; background: #DAE1DC"></div>
-        </div>
-        <div data-layer="Step title" class="StepTitle" style="align-self: stretch; color: #172D30; font-size: 21px; font-family: Inter; font-weight: 600; word-wrap: break-word">Prepare the data</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Use public or synthetic sources. Check quality, definitions and limitations.</div>
-      </div>
-      <div data-layer="Process step" class="ProcessStep" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: inline-flex">
-        <div data-layer="Step marker" class="StepMarker" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
-          <div data-layer="Step number" class="StepNumber" style="color: #087E82; font-size: 28px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">03</div>
-          <div data-layer="Connector" class="Connector" style="flex: 1 1 0; height: 1px; background: #DAE1DC"></div>
-        </div>
-        <div data-layer="Step title" class="StepTitle" style="align-self: stretch; color: #172D30; font-size: 21px; font-family: Inter; font-weight: 600; word-wrap: break-word">Explore with context</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Look for patterns, compare segments and test assumptions before drawing conclusions.</div>
-      </div>
-      <div data-layer="Process step" class="ProcessStep" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: inline-flex">
-        <div data-layer="Step marker" class="StepMarker" style="align-self: stretch; overflow: hidden; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
-          <div data-layer="Step number" class="StepNumber" style="color: #087E82; font-size: 28px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">04</div>
-          <div data-layer="Connector" class="Connector" style="flex: 1 1 0; height: 1px; background: #DAE1DC"></div>
-        </div>
-        <div data-layer="Step title" class="StepTitle" style="align-self: stretch; color: #172D30; font-size: 21px; font-family: Inter; font-weight: 600; word-wrap: break-word">Make it actionable</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 14px; font-family: Inter; font-weight: 400; line-height: 23.10px; word-wrap: break-word">Build clear visuals, explain uncertainty and recommend a measurable next step.</div>
-      </div>
-    </div>
-    <div data-layer="Data ethics note" class="DataEthicsNote" style="align-self: stretch; padding: 18px; overflow: hidden; border-radius: 6px; outline: 1px #DAE1DC solid; outline-offset: -1px; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
-      <div data-layer="shield-check" class="ShieldCheck" style="width: 20px; height: 20px; position: relative; overflow: hidden">
-        <div data-layer="Vector" class="Vector" style="width: 13.33px; height: 16.67px; left: 3.33px; top: 1.67px; position: absolute; outline: 1.60px #087E82 solid; outline-offset: -0.80px"></div>
-      </div>
-      <div data-layer="Privacy commitment" class="PrivacyCommitment" style="flex: 1 1 0; color: #58696B; font-size: 13px; font-family: Inter; font-weight: 400; line-height: 19.50px; word-wrap: break-word">Privacy by design: portfolio work uses public or synthetic datasets — never confidential banking customer information.</div>
-    </div>
-  </div>
-  <div data-layer="Contact and footer" class="ContactAndFooter" style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-    <div data-layer="Contact" class="Contact" style="align-self: stretch; padding: 80px; background: #DBEFEB; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 100px; display: inline-flex">
-      <div data-layer="Contact invitation" class="ContactInvitation" style="flex: 1 1 0; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-        <div data-layer="Eyebrow" class="Eyebrow" style="color: #087E82; font-size: 11px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">08 / LET’S CONNECT</div>
-        <div data-layer="Heading" class="Heading" style="align-self: stretch; color: #172D30; font-size: 48px; font-family: Inter; font-weight: 600; line-height: 53.76px; word-wrap: break-word">Good questions start great conversations.</div>
-        <div data-layer="Description" class="Description" style="align-self: stretch; color: #58696B; font-size: 17px; font-family: Inter; font-weight: 400; line-height: 28.05px; word-wrap: break-word">Interested in a customer-first perspective on data? I’d welcome a conversation about entry-level analyst opportunities, learning or collaboration.</div>
-        <div data-layer="Action" class="Action" style="height: 52px; padding-left: 22px; padding-right: 22px; background: #087E82; overflow: hidden; border-radius: 6px; outline: 1px rgba(0, 0, 0, 0) solid; outline-offset: -1px; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
-          <div data-layer="Label" class="Label" style="color: white; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Get in touch</div>
-          <div data-layer="mail" class="Mail" style="width: 17px; height: 17px; position: relative; overflow: hidden">
-            <div data-layer="Vector" class="Vector" style="width: 14.17px; height: 11.33px; left: 1.42px; top: 2.83px; position: absolute; outline: 1.60px white solid; outline-offset: -0.80px"></div>
-          </div>
-        </div>
-      </div>
-      <div data-layer="Contact details" class="ContactDetails" style="width: 500px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div data-layer="Customization label" class="CustomizationLabel" style="color: #58696B; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">YOUR CONTACT LINKS / REPLACE PLACEHOLDERS</div>
-        <div data-layer="Contact links" class="ContactLinks" style="align-self: stretch; padding-top: 22px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-          <div data-layer="Contact link" class="ContactLink" style="align-self: stretch; padding-top: 21px; padding-bottom: 21px; overflow: hidden; border-bottom: 1px rgba(10, 69, 74, 0.14) solid; justify-content: flex-start; align-items: center; gap: 20px; display: inline-flex">
-            <div data-layer="Channel" class="Channel" style="width: 88px; color: #172D30; font-size: 15px; font-family: Inter; font-weight: 600; word-wrap: break-word">Email</div>
-            <div data-layer="Link placeholder" class="LinkPlaceholder" style="flex: 1 1 0; color: #58696B; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">[your.email@example.com]</div>
-            <div data-layer="arrow-up-right" class="ArrowUpRight" style="width: 17px; height: 17px; position: relative; overflow: hidden">
-              <div data-layer="Vector" class="Vector" style="width: 7.08px; height: 7.08px; left: 4.96px; top: 4.96px; position: absolute; outline: 1.50px #087E82 solid; outline-offset: -0.75px"></div>
-            </div>
-          </div>
-          <div data-layer="Contact link" class="ContactLink" style="align-self: stretch; padding-top: 21px; padding-bottom: 21px; overflow: hidden; border-bottom: 1px rgba(10, 69, 74, 0.14) solid; justify-content: flex-start; align-items: center; gap: 20px; display: inline-flex">
-            <div data-layer="Channel" class="Channel" style="width: 88px; color: #172D30; font-size: 15px; font-family: Inter; font-weight: 600; word-wrap: break-word">LinkedIn</div>
-            <div data-layer="Link placeholder" class="LinkPlaceholder" style="flex: 1 1 0; color: #58696B; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">[Add your profile URL]</div>
-            <div data-layer="arrow-up-right" class="ArrowUpRight" style="width: 17px; height: 17px; position: relative; overflow: hidden">
-              <div data-layer="Vector" class="Vector" style="width: 7.08px; height: 7.08px; left: 4.96px; top: 4.96px; position: absolute; outline: 1.50px #087E82 solid; outline-offset: -0.75px"></div>
-            </div>
-          </div>
-          <div data-layer="Contact link" class="ContactLink" style="align-self: stretch; padding-top: 21px; padding-bottom: 21px; overflow: hidden; border-bottom: 1px rgba(10, 69, 74, 0.14) solid; justify-content: flex-start; align-items: center; gap: 20px; display: inline-flex">
-            <div data-layer="Channel" class="Channel" style="width: 88px; color: #172D30; font-size: 15px; font-family: Inter; font-weight: 600; word-wrap: break-word">GitHub</div>
-            <div data-layer="Link placeholder" class="LinkPlaceholder" style="flex: 1 1 0; color: #58696B; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">[Add your repository URL]</div>
-            <div data-layer="arrow-up-right" class="ArrowUpRight" style="width: 17px; height: 17px; position: relative; overflow: hidden">
-              <div data-layer="Vector" class="Vector" style="width: 7.08px; height: 7.08px; left: 4.96px; top: 4.96px; position: absolute; outline: 1.50px #087E82 solid; outline-offset: -0.75px"></div>
-            </div>
-          </div>
-          <div data-layer="Contact link" class="ContactLink" style="align-self: stretch; padding-top: 21px; padding-bottom: 21px; overflow: hidden; border-bottom: 1px rgba(10, 69, 74, 0.14) solid; justify-content: flex-start; align-items: center; gap: 20px; display: inline-flex">
-            <div data-layer="Channel" class="Channel" style="width: 88px; color: #172D30; font-size: 15px; font-family: Inter; font-weight: 600; word-wrap: break-word">Résumé</div>
-            <div data-layer="Link placeholder" class="LinkPlaceholder" style="flex: 1 1 0; color: #58696B; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">[Add downloadable PDF]</div>
-            <div data-layer="arrow-up-right" class="ArrowUpRight" style="width: 17px; height: 17px; position: relative; overflow: hidden">
-              <div data-layer="Vector" class="Vector" style="width: 7.08px; height: 7.08px; left: 4.96px; top: 4.96px; position: absolute; outline: 1.50px #087E82 solid; outline-offset: -0.75px"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div data-layer="Footer" class="Footer" style="align-self: stretch; padding-left: 80px; padding-right: 80px; padding-top: 32px; padding-bottom: 32px; background: #F8F7F3; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
-      <div data-layer="Footer navigation" class="FooterNavigation" style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
-        <div data-layer="Identity" class="Identity" style="overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: inline-flex">
-          <div data-layer="Name placeholder" class="NamePlaceholder" style="color: #172D30; font-size: 19px; font-family: Inter; font-weight: 600; word-wrap: break-word">HONEY FLORES</div>
-          <div data-layer="Role" class="Role" style="color: #58696B; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Aspiring data analyst · Retail banking perspective</div>
-        </div>
-        <div data-layer="Footer links" class="FooterLinks" style="overflow: hidden; justify-content: flex-start; align-items: center; gap: 28px; display: flex">
-          <div data-layer="Footer link" class="FooterLink" style="color: #58696B; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">About</div>
-          <div data-layer="Footer link" class="FooterLink" style="color: #58696B; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Projects</div>
-          <div data-layer="Footer link" class="FooterLink" style="color: #58696B; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Contact</div>
-          <div data-layer="Footer link" class="FooterLink" style="color: #58696B; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Back to top ↑</div>
-        </div>
-      </div>
-      <div data-layer="Divider" class="Divider" style="align-self: stretch; height: 1px; background: #DAE1DC"></div>
-      <div data-layer="Portfolio notes" class="PortfolioNotes" style="align-self: stretch; overflow: hidden; justify-content: space-between; align-items: flex-start; display: inline-flex">
-        <div data-layer="Ownership" class="Ownership" style="color: #788483; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">© 2026 HONEY FLORES · Portfolio draft</div>
-        <div data-layer="Template disclosure" class="TemplateDisclosure" style="color: #788483; font-size: 10px; font-family: IBM Plex Mono; font-weight: 400; word-wrap: break-word">Editable design · Sample concepts and synthetic visuals · Links to customize</div>
-      </div>
-    </div>
-  </div>
+</section>
+<div class="max-w-[1280px] mx-auto px-6 md:px-10">
+  <div class="h-px bg-line"></div>
 </div>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-[1280px] mx-auto px-6 md:px-10 py-16 md:py-20 grid md:grid-cols-[1fr_440px] gap-14">
+  <div class="flex flex-col gap-6">
+    <div class="flex flex-col gap-4">
+      <span class="font-mono-tight text-[11px] text-teal uppercase tracking-wide">01 / About</span>
+      <h2 class="text-3xl md:text-4xl font-semibold leading-tight">The human side of data.</h2>
+    </div>
+    <p class="text-lg leading-relaxed">My starting point isn't just a spreadsheet. It's the client on the other end of the call.</p>
+    <p class="text-muted leading-relaxed">Two years in financial-services customer support and fraud review gave me a practical lens on how data decisions affect real people. I'm now building the technical skills — Python, SQL, Power BI — to turn that context into clearer questions, useful visualizations and thoughtful recommendations.</p>
+    <p class="text-faint font-mono-tight text-[11px] leading-relaxed">Taguig, Metro Manila · BS Computer Science, Polytechnic University of the Philippines (Sep 2026) · floreshoneyt@gmail.com</p>
+  </div>
+
+  <div class="bg-white border border-line rounded-xl p-7 flex flex-col gap-6">
+    <span class="w-fit bg-pill text-tealdark text-[11px] font-semibold px-3 py-1.5 rounded-full">A different starting point</span>
+    <div class="flex flex-col gap-2.5">
+      <span class="font-mono-tight text-[10px] text-teal">EXPERIENCE I BRING</span>
+      <h3 class="text-xl font-semibold leading-snug">Customer context. Fraud &amp; dispute review.</h3>
+      <p class="text-muted text-sm leading-relaxed">1,500+ disputes reviewed monthly at Coforge, verifying transaction data and improving fraud-detection accuracy by 30% — real pattern-recognition work, just without the title.</p>
+    </div>
+    <div class="h-px bg-line"></div>
+    <div class="flex items-center gap-2.5">
+      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M4 7l5 5 5-5" stroke="#B03C17" stroke-width="1.5"/></svg>
+      <span class="font-mono-tight text-[10px] text-teal">BUILDING THE ANALYTICAL LAYER</span>
+    </div>
+    <div class="flex flex-col gap-2">
+      <h3 class="text-xl font-semibold">From questions to evidence.</h3>
+      <p class="text-muted text-sm leading-relaxed">A self-built fraud-detection pipeline (Python, SQL, Random Forest, 0.75 ROC-AUC) and a thesis project cleaning 50,000 research articles — proof I can carry data work end-to-end.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSFERABLE STRENGTHS -->
+<section class="bg-paperalt py-16 md:py-20">
+  <div class="max-w-[1280px] mx-auto px-6 md:px-10 flex flex-col gap-9">
+    <div class="flex flex-col md:flex-row md:items-end gap-8 md:gap-20">
+      <div class="md:w-[600px] flex flex-col gap-4">
+        <span class="font-mono-tight text-[11px] text-teal uppercase tracking-wide">02 / Transferable strengths</span>
+        <h2 class="text-3xl md:text-4xl font-semibold leading-tight">Support experience. Analytical potential.</h2>
+      </div>
+      <p class="text-muted text-sm leading-relaxed flex-1">What my customer-facing roles already taught me about working with data responsibly.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="bg-white rounded-xl p-6 flex flex-col gap-4">
+        <svg width="24" height="24" viewBox="0 0 25 25" fill="none"><path d="M3 5h19v13H9l-6 5V5z" stroke="#B03C17" stroke-width="1.6"/></svg>
+        <h3 class="text-lg font-semibold">Customer understanding</h3>
+        <p class="text-muted text-sm leading-relaxed">Interpreting live client financial data at Citi and explaining it clearly — the same skill that frames a good analytical question.</p>
+        <span class="font-mono-tight text-[10px] text-teal">Listen → frame the right question</span>
+      </div>
+      <div class="bg-white rounded-xl p-6 flex flex-col gap-4">
+        <svg width="24" height="24" viewBox="0 0 25 25" fill="none"><path d="M4 12a8 8 0 0113-6M21 12a8 8 0 01-13 6M4 6v4h4M21 18v-4h-4" stroke="#B03C17" stroke-width="1.6"/></svg>
+        <h3 class="text-lg font-semibold">Process &amp; workflow</h3>
+        <p class="text-muted text-sm leading-relaxed">Built Power Automate workflows and PMBOK-standard documentation at Hacktiv Colab — seeing the operations behind the data.</p>
+        <span class="font-mono-tight text-[10px] text-teal">Understand → investigate the process</span>
+      </div>
+      <div class="bg-white rounded-xl p-6 flex flex-col gap-4">
+        <svg width="24" height="24" viewBox="0 0 25 25" fill="none"><path d="M12.5 3l7 3v6c0 5-3 8.5-7 9.5-4-1-7-4.5-7-9.5V6l7-3z" stroke="#B03C17" stroke-width="1.6"/></svg>
+        <h3 class="text-lg font-semibold">A responsible data lens</h3>
+        <p class="text-muted text-sm leading-relaxed">1,500+ disputes a month at Coforge meant treating accuracy and false positives as consequences, not abstractions.</p>
+        <span class="font-mono-tight text-[10px] text-teal">Check → protect data integrity</span>
+      </div>
+      <div class="bg-white rounded-xl p-6 flex flex-col gap-4">
+        <svg width="24" height="24" viewBox="0 0 25 25" fill="none"><path d="M3 6h19v12H8l-5 4V6z" stroke="#B03C17" stroke-width="1.6"/></svg>
+        <h3 class="text-lg font-semibold">Clear communication</h3>
+        <p class="text-muted text-sm leading-relaxed">Built and shared an Excel KPI tracker with teammates at Citi after it helped me hit my own monthly targets.</p>
+        <span class="font-mono-tight text-[10px] text-teal">Explain → make insight useful</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECT: real fraud-detection pipeline -->
+<section id="projects" class="max-w-[1280px] mx-auto px-6 md:px-10 py-16 md:py-20 flex flex-col gap-9">
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+    <div class="md:max-w-[820px] flex flex-col gap-4">
+      <span class="font-mono-tight text-[11px] text-teal uppercase tracking-wide">03 / Featured project</span>
+      <h2 class="text-3xl md:text-4xl font-semibold leading-tight">Can transaction patterns flag fraud before it's confirmed?</h2>
+      <p class="text-muted leading-relaxed">A personal project built to practice the full pipeline — from raw transactions to a working classification model.</p>
+    </div>
+    <span class="w-fit bg-pill text-tealdark text-[11px] font-semibold px-3 py-1.5 rounded-full">Personal project · real results</span>
+  </div>
+
+  <div class="bg-white border border-line rounded-2xl p-7 md:p-9 flex flex-col gap-9">
+    <div class="grid md:grid-cols-[420px_1fr] gap-10 items-start">
+      <div class="flex flex-col gap-5">
+        <span class="font-mono-tight text-[10px] text-faint">FRAUD ANALYTICS / PERSONAL PROJECT</span>
+        <h3 class="text-2xl font-semibold leading-snug">8,000 transactions. One classification model.</h3>
+        <p class="text-muted leading-relaxed">Built a fraud-detection pipeline over 8,000 transactions using SQL for data prep and a Random Forest classifier in Python — the same instinct for suspicious patterns I used reviewing 1,500+ disputes a month at Coforge, now applied with code.</p>
+        <div class="h-px bg-line"></div>
+        <div class="flex flex-col gap-1.5">
+          <span class="font-mono-tight text-[10px] text-teal">DATASET</span>
+          <p class="text-muted text-sm leading-relaxed">8,000 transaction records, cleaned and prepared with SQL before modeling.</p>
+        </div>
+      </div>
+
+      <div class="bg-paperalt rounded-xl p-7 flex flex-col gap-6">
+        <div class="flex items-start justify-between">
+          <div class="flex flex-col gap-1.5">
+            <span class="font-mono-tight text-[10px] text-teal">MODEL RESULT</span>
+            <h4 class="text-xl font-semibold">Random Forest classifier</h4>
+            <span class="text-muted text-xs">0.75 ROC-AUC on held-out transactions</span>
+          </div>
+          <span class="bg-pill text-tealdark text-[11px] font-semibold px-3 py-1.5 rounded-full h-fit">Real result</span>
+        </div>
+
+        <!-- simple real ROC-AUC bar, not a fake synthetic chart -->
+        <div class="flex flex-col gap-2">
+          <div class="flex justify-between text-xs text-muted font-mono-tight">
+            <span>0.5 (random guess)</span>
+            <span>1.0 (perfect)</span>
+          </div>
+          <div class="h-3 bg-line rounded-full overflow-hidden relative">
+            <div class="h-full bg-teal rounded-full" style="width:75%"></div>
+          </div>
+          <span class="text-right font-mono-tight text-sm text-tealdark font-medium">0.75 ROC-AUC</span>
+        </div>
+
+        <div class="h-px bg-line"></div>
+        <p class="text-muted text-xs leading-relaxed font-mono-tight">PERSONAL PROJECT, NOT PRODUCTION DATA · built to practice end-to-end modeling, not a claim of professional deployment.</p>
+      </div>
+    </div>
+
+    <div class="h-px bg-line"></div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="flex flex-col gap-3">
+        <span class="font-mono-tight text-[10px] text-teal">01 / APPROACH</span>
+        <h4 class="text-lg font-semibold">Clean before modeling.</h4>
+        <p class="text-muted text-sm leading-relaxed">Used SQL to prepare and structure the raw transaction data before any modeling began.</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="font-mono-tight text-[10px] text-teal">02 / METHOD</span>
+        <h4 class="text-lg font-semibold">Random Forest classification.</h4>
+        <p class="text-muted text-sm leading-relaxed">Trained a Random Forest model in Python to flag likely-fraudulent transactions.</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="font-mono-tight text-[10px] text-teal">03 / RESULT</span>
+        <h4 class="text-lg font-semibold">0.75 ROC-AUC.</h4>
+        <p class="text-muted text-sm leading-relaxed">A solid first model result, with room to keep improving feature engineering.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FURTHER PROJECTS: real work, not synthetic concepts -->
+<section class="max-w-[1280px] mx-auto px-6 md:px-10 pb-16 md:pb-20 flex flex-col gap-9">
+  <div class="flex flex-col gap-4">
+    <span class="font-mono-tight text-[11px] text-teal uppercase tracking-wide">04 / More real work</span>
+    <h2 class="text-3xl md:text-4xl font-semibold leading-tight">Thesis research and workplace tools.</h2>
+    <p class="text-muted leading-relaxed max-w-[60ch]">Two more pieces that show the same pattern: take on the detail work, ship something that works.</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="bg-white border border-line rounded-xl overflow-hidden flex flex-col">
+      <div class="bg-paperalt p-6 flex flex-col gap-3">
+        <span class="font-mono-tight text-[9px] text-muted">UNDERGRADUATE THESIS · REAL RESULT</span>
+        <div class="flex items-end gap-4 h-[90px]">
+          <div class="flex flex-col items-center gap-1.5 flex-1">
+            <span class="font-mono-tight text-xs text-tealdark">+8.08</span>
+            <div class="w-full bg-teal rounded-t" style="height:70px"></div>
+            <span class="font-mono-tight text-[9px] text-muted">ROUGE-1 pts</span>
+          </div>
+          <div class="flex flex-col items-center gap-1.5 flex-1">
+            <span class="font-mono-tight text-xs text-tealdark">3×</span>
+            <div class="w-full bg-tealmid rounded-t" style="height:90px"></div>
+            <span class="font-mono-tight text-[9px] text-muted">ROUGE-2 gain</span>
+          </div>
+        </div>
+      </div>
+      <div class="p-6 flex flex-col gap-3">
+        <span class="w-fit bg-pill text-tealdark text-[11px] font-semibold px-3 py-1.5 rounded-full">Team lead</span>
+        <span class="font-mono-tight text-[10px] text-teal">NLP RESEARCH</span>
+        <h3 class="text-xl font-semibold leading-snug">LORECAST — Longformer-based summarization</h3>
+        <p class="text-muted text-sm leading-relaxed">Led a research team and personally owned data cleaning and verification across 50,000 articles, improving model performance by 8+ ROUGE-1 points and tripling ROUGE-2 scores.</p>
+      </div>
+    </div>
+
+    <div class="bg-white border border-line rounded-xl overflow-hidden flex flex-col">
+      <div class="bg-paperalt p-6 flex flex-col gap-3">
+        <span class="font-mono-tight text-[9px] text-muted">CITI KPI TRACKER · REAL RESULT</span>
+        <div class="flex items-center justify-center h-[90px]">
+          <svg width="90" height="90" viewBox="0 0 36 36">
+            <circle cx="18" cy="18" r="16" fill="none" stroke="rgba(109,23,48,0.16)" stroke-width="4"/>
+            <circle cx="18" cy="18" r="16" fill="none" stroke="#B03C17" stroke-width="4" stroke-dasharray="95 5" stroke-dashoffset="25" transform="rotate(-90 18 18)"/>
+            <text x="18" y="21" text-anchor="middle" font-size="8" fill="#6D1730" font-family="IBM Plex Mono">95%</text>
+          </svg>
+        </div>
+      </div>
+      <div class="p-6 flex flex-col gap-3">
+        <span class="w-fit bg-pill text-tealdark text-[11px] font-semibold px-3 py-1.5 rounded-full">Self-initiated</span>
+        <span class="font-mono-tight text-[10px] text-teal">EXCEL / WORKPLACE TOOL</span>
+        <h3 class="text-xl font-semibold leading-snug">A self-built KPI tracker</h3>
+        <p class="text-muted text-sm leading-relaxed">Built a VLOOKUP/Pivot Table tracker to monitor my own resolution-rate KPI at Citi, then shared it with teammates who were struggling to hit theirs.</p>
+        <a href="files/excel_practice_vlookup_pivot.xlsx" download class="text-teal text-sm font-semibold hover:underline w-fit">Download a practice version ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="bg-tealdark py-16 md:py-20">
+  <div class="max-w-[1280px] mx-auto px-6 md:px-10 flex flex-col gap-9">
+    <div class="flex flex-col md:flex-row md:items-end gap-8 md:gap-20">
+      <div class="md:w-[600px] flex flex-col gap-4">
+        <span class="font-mono-tight text-[11px] text-tealpale uppercase tracking-wide">05 / Skills &amp; tools</span>
+        <h2 class="text-3xl md:text-4xl font-semibold leading-tight text-mint">Building the toolkit, with real evidence behind it.</h2>
+      </div>
+      <p class="text-tealpale text-sm leading-relaxed flex-1">Each tool below is backed by something I've actually shipped — not just a familiarity claim.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      <div class="border border-white/20 rounded-xl p-5 flex flex-col gap-4">
+        <div class="w-11 h-9 bg-white/5 rounded-md flex items-center justify-center font-mono-tight text-xs text-tealwash">XLS</div>
+        <h3 class="text-mint text-xl font-medium">Excel</h3>
+        <p class="text-tealpale text-[13px] leading-relaxed">VLOOKUP/XLOOKUP, Pivot Tables, conditional formatting.</p>
+        <span class="font-mono-tight text-[10px] text-tealwash">Built my own KPI tracker, Citi</span>
+      </div>
+      <div class="border border-white/20 rounded-xl p-5 flex flex-col gap-4">
+        <div class="w-11 h-9 bg-white/5 rounded-md flex items-center justify-center font-mono-tight text-xs text-tealwash">SQL</div>
+        <h3 class="text-mint text-xl font-medium">SQL</h3>
+        <p class="text-tealpale text-[13px] leading-relaxed">MySQL — filtering, joins, aggregation.</p>
+        <span class="font-mono-tight text-[10px] text-tealwash">Data prep, fraud-detection project</span>
+      </div>
+      <div class="border border-white/20 rounded-xl p-5 flex flex-col gap-4">
+        <div class="w-11 h-9 bg-white/5 rounded-md flex items-center justify-center font-mono-tight text-xs text-tealwash">PBI</div>
+        <h3 class="text-mint text-xl font-medium">Power BI</h3>
+        <p class="text-tealpale text-[13px] leading-relaxed">Dashboards for project milestones and KPIs.</p>
+        <span class="font-mono-tight text-[10px] text-tealwash">Built during Hacktiv Colab internship</span>
+      </div>
+      <div class="border border-white/20 rounded-xl p-5 flex flex-col gap-4">
+        <div class="w-11 h-9 bg-white/5 rounded-md flex items-center justify-center font-mono-tight text-xs text-tealwash">P.A.</div>
+        <h3 class="text-mint text-xl font-medium">Power Automate</h3>
+        <p class="text-tealpale text-[13px] leading-relaxed">Workflow automation, PowerShell scripting.</p>
+        <span class="font-mono-tight text-[10px] text-tealwash">Reduced manual effort, Hacktiv Colab</span>
+      </div>
+      <div class="border border-white/20 rounded-xl p-5 flex flex-col gap-4">
+        <div class="w-11 h-9 bg-white/5 rounded-md flex items-center justify-center font-mono-tight text-xs text-tealwash">PY</div>
+        <h3 class="text-mint text-xl font-medium">Python</h3>
+        <p class="text-tealpale text-[13px] leading-relaxed">Pandas, NumPy, scikit-learn (Random Forest).</p>
+        <span class="font-mono-tight text-[10px] text-tealwash">0.75 ROC-AUC model, personal project</span>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-4 pt-2">
+      <span class="w-8 h-0.5 bg-tealmid"></span>
+      <p class="text-tealpale text-[13px] leading-relaxed">BS Computer Science, Polytechnic University of the Philippines (Sep 2026) · SM Foundation, MSD Priority and Zonta International scholar, 2022–2026.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="max-w-[1280px] mx-auto px-6 md:px-10 py-16 md:py-20 grid md:grid-cols-[340px_1fr] gap-14">
+  <div class="flex flex-col gap-6">
+    <div class="flex flex-col gap-4">
+      <span class="font-mono-tight text-[11px] text-teal uppercase tracking-wide">06 / Experience</span>
+      <h2 class="text-3xl md:text-4xl font-semibold leading-tight">Four roles, one pattern.</h2>
+    </div>
+    <p class="text-muted leading-relaxed">Customer support, fraud review and project coordination — the experience behind my analytical perspective.</p>
+    <span class="w-fit bg-pill text-tealdark text-[11px] font-semibold px-3 py-1.5 rounded-full">Financial services &amp; BPO background</span>
+  </div>
+
+  <div class="flex flex-col">
+    <div class="h-px bg-line"></div>
+
+    <div class="py-7 flex flex-col gap-3">
+      <div class="flex flex-wrap justify-between gap-2">
+        <div class="flex flex-col gap-1">
+          <h3 class="text-xl font-semibold">Customer Solutions Officer</h3>
+          <span class="text-muted text-sm">Citigroup Business Process Solutions</span>
+        </div>
+        <span class="font-mono-tight text-[10px] text-muted">OCT 2025 – PRESENT</span>
+      </div>
+      <p class="text-muted text-sm leading-relaxed">Interpret live client financial data in real time and communicate it clearly to customers; built a self-monitoring Excel tracker that helped hit monthly KPI targets, then shared it with the team.</p>
+    </div>
+    <div class="h-px bg-line"></div>
+
+    <div class="py-7 flex flex-col gap-3">
+      <div class="flex flex-wrap justify-between gap-2">
+        <div class="flex flex-col gap-1">
+          <h3 class="text-xl font-semibold">Project Management Intern</h3>
+          <span class="text-muted text-sm">Hacktiv Colab</span>
+        </div>
+        <span class="font-mono-tight text-[10px] text-muted">JUL – AUG 2025</span>
+      </div>
+      <p class="text-muted text-sm leading-relaxed">Built Power Automate workflows and Power BI dashboards; produced PMBOK-standard documentation (business cases, charters, stakeholder matrices, risk logs) and used PowerShell for file/metadata management.</p>
+    </div>
+    <div class="h-px bg-line"></div>
+
+    <div class="py-7 flex flex-col gap-3">
+      <div class="flex flex-wrap justify-between gap-2">
+        <div class="flex flex-col gap-1">
+          <h3 class="text-xl font-semibold">Associate, Customer Service</h3>
+          <span class="text-muted text-sm">Sutherland</span>
+        </div>
+        <span class="font-mono-tight text-[10px] text-muted">JAN – JUL 2025</span>
+      </div>
+      <p class="text-muted text-sm leading-relaxed">Handled 100+ support tickets weekly, improved first-call resolution by 25%, and maintained a 95% resolution rate.</p>
+    </div>
+    <div class="h-px bg-line"></div>
+
+    <div class="py-7 flex flex-col gap-3">
+      <div class="flex flex-wrap justify-between gap-2">
+        <div class="flex flex-col gap-1">
+          <h3 class="text-xl font-semibold">Associate Team Member</h3>
+          <span class="text-muted text-sm">Coforge</span>
+        </div>
+        <span class="font-mono-tight text-[10px] text-muted">FEB 2023 – JAN 2025</span>
+      </div>
+      <p class="text-muted text-sm leading-relaxed">Reviewed and categorized 1,500+ disputes monthly as fraudulent or legitimate, verifying transaction and account data against established criteria and improving fraud-detection accuracy by 30%.</p>
+    </div>
+    <div class="h-px bg-line"></div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="bg-paperalt py-16 md:py-20">
+  <div class="max-w-[1280px] mx-auto px-6 md:px-10 flex flex-col gap-10">
+    <div class="flex flex-col md:flex-row md:items-end gap-8 md:gap-20">
+      <div class="md:w-[600px] flex flex-col gap-4">
+        <span class="font-mono-tight text-[11px] text-teal uppercase tracking-wide">07 / My approach</span>
+        <h2 class="text-3xl md:text-4xl font-semibold leading-tight">Better questions. Clearer decisions.</h2>
+      </div>
+      <p class="text-muted text-sm leading-relaxed flex-1">The framework I bring to every dataset, built from two years of handling real customer and transaction data.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-4">
+          <span class="font-mono-tight text-2xl text-teal">01</span>
+          <span class="flex-1 h-px bg-line"></span>
+        </div>
+        <h3 class="text-lg font-semibold">Frame the question</h3>
+        <p class="text-muted text-sm leading-relaxed">Clarify the decision, the audience, and what a useful answer looks like.</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-4">
+          <span class="font-mono-tight text-2xl text-teal">02</span>
+          <span class="flex-1 h-px bg-line"></span>
+        </div>
+        <h3 class="text-lg font-semibold">Prepare the data</h3>
+        <p class="text-muted text-sm leading-relaxed">Clean, structure and check quality before anything else — the habit from reviewing thousands of disputes.</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-4">
+          <span class="font-mono-tight text-2xl text-teal">03</span>
+          <span class="flex-1 h-px bg-line"></span>
+        </div>
+        <h3 class="text-lg font-semibold">Explore with context</h3>
+        <p class="text-muted text-sm leading-relaxed">Look for patterns, compare segments, and test assumptions before drawing conclusions.</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-4">
+          <span class="font-mono-tight text-2xl text-teal">04</span>
+          <span class="flex-1 h-px bg-line"></span>
+        </div>
+        <h3 class="text-lg font-semibold">Make it actionable</h3>
+        <p class="text-muted text-sm leading-relaxed">Build clear visuals, explain uncertainty, and recommend a measurable next step.</p>
+      </div>
+    </div>
+
+    <div class="border border-line rounded-md p-5 flex items-center gap-3">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="shrink-0"><path d="M10 2l6.5 3v5c0 4.5-2.8 7.6-6.5 8-3.7-.4-6.5-3.5-6.5-8V5L10 2z" stroke="#B03C17" stroke-width="1.6"/></svg>
+      <p class="text-muted text-[13px] leading-relaxed">Privacy by design: portfolio projects use only data I'm personally permitted to share — never confidential client information from Citi, Coforge or Sutherland.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-pill">
+  <div class="max-w-[1280px] mx-auto px-6 md:px-10 py-16 md:py-20 grid md:grid-cols-2 gap-14">
+    <div class="flex flex-col gap-6">
+      <span class="font-mono-tight text-[11px] text-teal">08 / LET'S CONNECT</span>
+      <h2 class="text-3xl md:text-[2.6rem] font-semibold leading-tight">Good questions start great conversations.</h2>
+      <p class="text-muted text-lg leading-relaxed">Interested in a customer-first perspective on data? I'd welcome a conversation about entry-level analyst opportunities, learning or collaboration.</p>
+      <a href="mailto:floreshoneyt@gmail.com" class="h-[52px] px-6 w-fit inline-flex items-center gap-3 bg-teal text-white rounded-md font-semibold text-sm hover:bg-tealdark transition">
+        Get in touch
+        <svg width="15" height="15" viewBox="0 0 17 17" fill="none"><path d="M2 4h13v9H2V4zm0 0l6.5 5L15 4" stroke="white" stroke-width="1.6"/></svg>
+      </a>
+    </div>
+
+    <div class="flex flex-col">
+      <span class="font-mono-tight text-[10px] text-muted">CONTACT</span>
+      <div class="flex flex-col pt-5">
+        <div class="flex items-center gap-5 py-5 border-b border-tealdark/15">
+          <span class="w-20 font-semibold text-[15px]">Email</span>
+          <a href="mailto:floreshoneyt@gmail.com" class="flex-1 text-muted text-sm hover:text-teal transition">floreshoneyt@gmail.com</a>
+        </div>
+        <div class="flex items-center gap-5 py-5 border-b border-tealdark/15">
+          <span class="w-20 font-semibold text-[15px]">Phone</span>
+          <span class="flex-1 text-muted text-sm">+63 919 829 1832</span>
+        </div>
+        <div class="flex items-center gap-5 py-5 border-b border-tealdark/15">
+          <span class="w-20 font-semibold text-[15px]">Location</span>
+          <span class="flex-1 text-muted text-sm">Taguig, Metro Manila</span>
+        </div>
+        <div class="flex items-center gap-5 py-5 border-b border-tealdark/15">
+          <span class="w-20 font-semibold text-[15px]">Résumé</span>
+          <a href="files/Honey-Flores-Resume.pdf" download class="flex-1 text-teal text-sm font-semibold hover:underline">Download PDF ↓</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-paper">
+  <div class="max-w-[1280px] mx-auto px-6 md:px-10 py-8 flex flex-col gap-6">
+    <div class="flex flex-wrap items-center justify-between gap-4">
+      <div class="flex flex-col gap-1">
+        <span class="font-semibold text-lg">HONEY FLORES</span>
+        <span class="text-muted text-xs">Aspiring data analyst · Financial-services customer support background</span>
+      </div>
+      <div class="flex items-center gap-7 text-xs text-muted">
+        <a href="#about" class="hover:text-ink transition">About</a>
+        <a href="#projects" class="hover:text-ink transition">Projects</a>
+        <a href="#contact" class="hover:text-ink transition">Contact</a>
+        <a href="#" class="hover:text-ink transition">Back to top ↑</a>
+      </div>
+    </div>
+    <div class="h-px bg-line"></div>
+    <div class="flex flex-wrap justify-between gap-2">
+      <span class="font-mono-tight text-[10px] text-faint">© 2026 HONEY FLORES</span>
+      <span class="font-mono-tight text-[10px] text-faint">All figures and projects on this page are real</span>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
