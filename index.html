@@ -23,7 +23,7 @@
         colors: {
           ink: '#6D1730',
           teal: '#B03C17',
-          tealdark: '#561B4B',
+          tealdark: '#4E5029',
           tealmid: '#DC9829',
           tealpale: 'rgba(248,241,225,0.78)',
           tealwash: '#DC9829',
@@ -52,11 +52,7 @@
 <header class="border-b border-line">
   <div class="max-w-[1280px] mx-auto px-6 md:px-10 h-20 md:h-24 flex items-center justify-between">
     <div class="flex items-center gap-3">
-      <div class="w-8 h-8 bg-tealdark rounded-md flex items-end gap-[3px] p-2">
-        <span class="w-1 h-2 bg-tealwash rounded-sm"></span>
-        <span class="w-1 h-3.5 bg-tealwash rounded-sm"></span>
-        <span class="w-1 h-[18px] bg-tealwash rounded-sm"></span>
-      </div>
+      <img src="files/hf-logo-thin-separate-1024.png" alt="Honey Flores logo" class="w-8 h-8 object-cover rounded-md">
       <span class="font-semibold text-[17px] tracking-tight">HONEY FLORES</span>
       <span class="hidden sm:inline font-mono-tight text-[10px] text-muted">/ DATA PORTFOLIO</span>
     </div>
@@ -79,7 +75,7 @@
         <span class="w-[7px] h-[7px] rounded-full bg-teal"></span>
         <span class="font-mono-tight text-[11px] text-teal tracking-wide">ASPIRING DATA ANALYST · FINANCIAL SERVICES BACKGROUND</span>
       </div>
-      <h1 class="text-[2.4rem] md:text-[3.4rem] font-semibold leading-[1.08] tracking-tight">
+      <h1 class="text-[2.4rem] md:text-[3.4rem] font-semibold leading-[1.08] tracking-tight text-teal">
         Turning customer data into clear, decision-ready insights.
       </h1>
       <p class="text-lg text-muted max-w-[46ch] leading-relaxed">
@@ -98,7 +94,7 @@
     </div>
 
     <!-- real quick-facts card, replacing the fake synthetic chart -->
-    <div class="bg-tealdark rounded-2xl p-7 md:p-8 flex flex-col gap-6 shadow-lg">
+    <div class="bg-[#561B4B] rounded-2xl p-7 md:p-8 flex flex-col gap-6 shadow-lg">
       <div class="flex items-start justify-between">
         <div class="flex flex-col gap-1.5">
           <span class="font-mono-tight text-[10px] text-tealpale tracking-wide">THE WORK, IN NUMBERS</span>
@@ -113,7 +109,7 @@
         </div>
         <div class="flex flex-col gap-1">
           <span class="font-mono-tight text-2xl text-mint font-medium">95%</span>
-          <span class="text-tealpale text-xs leading-snug">call resolution rate, Sutherland</span>
+          <span class="text-tealpale text-xs leading-snug">call resolution rate, Citibank</span>
         </div>
         <div class="flex flex-col gap-1">
           <span class="font-mono-tight text-2xl text-mint font-medium">0.75</span>
@@ -172,7 +168,7 @@
     <span class="font-mono-tight text-[11px] text-teal uppercase tracking-wide">00 / Hello</span>
     <h2 class="text-3xl md:text-[2.6rem] font-semibold leading-tight">Hello! Welcome!</h2>
     <p class="text-lg leading-relaxed">
-      As you know, I'm Honey Flores — a working student for 4 years, balancing a full-time job in retail banking while maintaining a 1.52 GWA as an SM Foundation Inc. scholar and Priority Muntinlupa Scholar at the Polytechnic University of the Philippines, Computer Science.
+      As you know, I'm Honey Flores — a graduate student and working for 4 years, balancing a full-time job in retail banking while maintaining a 1.52 GWA as an SM Foundation Inc. scholar and Priority Muntinlupa Scholar at the Polytechnic University of the Philippines, Computer Science.
     </p>
     <p class="text-muted leading-relaxed">
       Along the way I've worn a lot of different hats: a UI/UX designer, a Product Management intern, team lead for my thesis LORECAST, a front-end developer, and the person who always ends up doing the data cleaning. Juggling a full course load with full-time work taught me how to move between very different kinds of work without dropping either one — and that range is exactly what I bring to a team now.
@@ -222,12 +218,109 @@
   </div>
 </section>
 
+<!-- FEATURED PROJECT -->
+<section id="projects" class="max-w-[1280px] mx-auto px-6 md:px-10 py-16 md:py-20 flex flex-col gap-8">
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-5">
+    <div class="flex flex-col gap-3">
+      <span class="font-mono-tight text-[11px] text-teal uppercase tracking-wide">02 / Featured projects</span>
+      <h2 class="text-3xl md:text-4xl font-semibold leading-tight">A closer look at the work.</h2>
+    </div>
+    <span class="w-fit bg-pill text-tealdark text-[11px] font-semibold px-3 py-1.5 rounded-full">Personal project · real result</span>
+  </div>
+
+  <a href="project-1.html" class="group grid md:grid-cols-2 overflow-hidden bg-white border border-line rounded-2xl shadow-sm hover:shadow-lg transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal">
+    <div class="min-h-[280px] md:min-h-[360px] bg-[#561B4B] p-7 md:p-10 flex flex-col justify-between text-mint">
+      <div class="flex justify-between items-start gap-4">
+        <span class="font-mono-tight text-[10px] text-tealpale tracking-wide">FRAUD ANALYTICS · PROJECT 01</span>
+        <span class="font-mono-tight text-[10px] text-tealmid">RESULT PREVIEW</span>
+      </div>
+      <div class="flex flex-col gap-6">
+        <div>
+          <span class="font-mono-tight text-[10px] text-tealpale">RANDOM FOREST · HELD-OUT DATA</span>
+          <div class="mt-2 flex items-baseline gap-3">
+            <span class="font-mono-tight text-6xl md:text-7xl font-medium">0.75</span>
+            <span class="text-sm text-tealpale">ROC-AUC</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="flex justify-between font-mono-tight text-[10px] text-tealpale">
+            <span>0.5 · RANDOM GUESS</span>
+            <span>1.0 · PERFECT</span>
+          </div>
+          <div class="h-3 rounded-full bg-white/20 overflow-hidden">
+            <div class="h-full w-3/4 rounded-full bg-tealmid"></div>
+          </div>
+          <span class="font-mono-tight text-[10px] text-tealpale">8,000 TRANSACTION RECORDS</span>
+        </div>
+      </div>
+      <span class="font-mono-tight text-[9px] text-tealpale">VISUAL SUMMARY · NOT A RAW-DATA SCREENSHOT</span>
+    </div>
+
+    <div class="p-7 md:p-10 flex flex-col justify-center gap-5">
+      <span class="font-mono-tight text-[10px] text-teal">WHAT IS THIS?</span>
+      <h3 class="text-2xl md:text-3xl font-semibold leading-snug">Can transaction patterns help flag fraud?</h3>
+      <p class="text-muted leading-relaxed">A personal end-to-end analysis project: I used SQL to prepare 8,000 transaction records, then trained a Random Forest classifier in Python to identify potentially fraudulent transactions.</p>
+      <div class="flex flex-wrap gap-2">
+        <span class="font-mono-tight text-[10px] text-tealdark bg-pill px-3 py-1.5 rounded-full">SQL</span>
+        <span class="font-mono-tight text-[10px] text-tealdark bg-pill px-3 py-1.5 rounded-full">Python</span>
+        <span class="font-mono-tight text-[10px] text-tealdark bg-pill px-3 py-1.5 rounded-full">Random Forest</span>
+      </div>
+      <span class="mt-1 inline-flex items-center gap-2 text-teal text-sm font-semibold">
+        Explore the full case study
+        <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span>
+      </span>
+    </div>
+  </a>
+
+  <a href="project-2.html" class="group grid md:grid-cols-2 overflow-hidden bg-white border border-line rounded-2xl shadow-sm hover:shadow-lg transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal">
+    <div class="min-h-[280px] md:min-h-[360px] bg-tealdark p-7 md:p-10 flex flex-col justify-between text-mint">
+      <div class="flex justify-between items-start gap-4">
+        <span class="font-mono-tight text-[10px] text-tealpale tracking-wide">NLP RESEARCH · PROJECT 02</span>
+        <span class="font-mono-tight text-[10px] text-tealmid">THESIS RESULTS</span>
+      </div>
+      <div class="flex flex-col gap-6">
+        <div>
+          <span class="font-mono-tight text-[10px] text-tealpale">MY ROLE · TEAM LEAD &amp; DATA CLEANING</span>
+          <div class="mt-2 font-mono-tight text-5xl md:text-6xl font-medium">50,000</div>
+          <span class="text-sm text-tealpale">news articles cleaned and verified</span>
+        </div>
+        <div class="grid grid-cols-2 gap-4 border-t border-white/20 pt-4">
+          <div>
+            <span class="font-mono-tight text-2xl text-mint">+8.08</span>
+            <p class="mt-1 text-xs text-tealpale">ROUGE-1 points</p>
+          </div>
+          <div>
+            <span class="font-mono-tight text-2xl text-mint">3×</span>
+            <p class="mt-1 text-xs text-tealpale">ROUGE-2 gain</p>
+          </div>
+        </div>
+      </div>
+      <span class="font-mono-tight text-[9px] text-tealpale">LORECAST · LONGFORMER + REINFORCEMENT LEARNING</span>
+    </div>
+
+    <div class="p-7 md:p-10 flex flex-col justify-center gap-5">
+      <span class="font-mono-tight text-[10px] text-teal">UNDERGRADUATE THESIS · TEAM PROJECT</span>
+      <h3 class="text-2xl md:text-3xl font-semibold leading-snug">Making long news articles easier to understand.</h3>
+      <p class="text-muted leading-relaxed">As team lead, I was assigned responsibility for cleaning and verifying the 50,000-article dataset used in LoReCast, our Longformer-based news summarization research with reinforcement learning.</p>
+      <div class="flex flex-wrap gap-2">
+        <span class="font-mono-tight text-[10px] text-tealdark bg-pill px-3 py-1.5 rounded-full">Data cleaning</span>
+        <span class="font-mono-tight text-[10px] text-tealdark bg-pill px-3 py-1.5 rounded-full">Team leadership</span>
+        <span class="font-mono-tight text-[10px] text-tealdark bg-pill px-3 py-1.5 rounded-full">NLP research</span>
+      </div>
+      <span class="mt-1 inline-flex items-center gap-2 text-teal text-sm font-semibold">
+        Explore the thesis case study
+        <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span>
+      </span>
+    </div>
+  </a>
+</section>
+
 <!-- TRANSFERABLE STRENGTHS -->
 <section class="bg-paperalt py-16 md:py-20">
   <div class="max-w-[1280px] mx-auto px-6 md:px-10 flex flex-col gap-9">
     <div class="flex flex-col md:flex-row md:items-end gap-8 md:gap-20">
       <div class="md:w-[600px] flex flex-col gap-4">
-        <span class="font-mono-tight text-[11px] text-teal uppercase tracking-wide">02 / Transferable strengths</span>
+        <span class="font-mono-tight text-[11px] text-teal uppercase tracking-wide">03 / Transferable strengths</span>
         <h2 class="text-3xl md:text-4xl font-semibold leading-tight">Support experience. Analytical potential.</h2>
       </div>
       <p class="text-muted text-sm leading-relaxed flex-1">What my customer-facing roles already taught me about working with data responsibly.</p>
@@ -262,112 +355,15 @@
   </div>
 </section>
 
-<!-- FEATURED PROJECT: real fraud-detection pipeline -->
-<section id="projects" class="max-w-[1280px] mx-auto px-6 md:px-10 py-16 md:py-20 flex flex-col gap-9">
-  <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
-    <div class="md:max-w-[820px] flex flex-col gap-4">
-      <span class="font-mono-tight text-[11px] text-teal uppercase tracking-wide">03 / Featured project</span>
-      <h2 class="text-3xl md:text-4xl font-semibold leading-tight">Can transaction patterns flag fraud before it's confirmed?</h2>
-      <p class="text-muted leading-relaxed">A personal project built to practice the full pipeline — from raw transactions to a working classification model.</p>
-    </div>
-    <span class="w-fit bg-pill text-tealdark text-[11px] font-semibold px-3 py-1.5 rounded-full">Personal project · real results</span>
-  </div>
-
-  <div class="bg-white border border-line rounded-2xl p-7 md:p-9 flex flex-col gap-9">
-    <div class="grid md:grid-cols-[420px_1fr] gap-10 items-start">
-      <div class="flex flex-col gap-5">
-        <span class="font-mono-tight text-[10px] text-faint">FRAUD ANALYTICS / PERSONAL PROJECT</span>
-        <h3 class="text-2xl font-semibold leading-snug">8,000 transactions. One classification model.</h3>
-        <p class="text-muted leading-relaxed">Built a fraud-detection pipeline over 8,000 transactions using SQL for data prep and a Random Forest classifier in Python — the same instinct for suspicious patterns I used reviewing 1,500+ disputes a month at Coforge, now applied with code.</p>
-        <div class="h-px bg-line"></div>
-        <div class="flex flex-col gap-1.5">
-          <span class="font-mono-tight text-[10px] text-teal">DATASET</span>
-          <p class="text-muted text-sm leading-relaxed">8,000 transaction records, cleaned and prepared with SQL before modeling.</p>
-        </div>
-      </div>
-
-      <div class="bg-paperalt rounded-xl p-7 flex flex-col gap-6">
-        <div class="flex items-start justify-between">
-          <div class="flex flex-col gap-1.5">
-            <span class="font-mono-tight text-[10px] text-teal">MODEL RESULT</span>
-            <h4 class="text-xl font-semibold">Random Forest classifier</h4>
-            <span class="text-muted text-xs">0.75 ROC-AUC on held-out transactions</span>
-          </div>
-          <span class="bg-pill text-tealdark text-[11px] font-semibold px-3 py-1.5 rounded-full h-fit">Real result</span>
-        </div>
-
-        <!-- simple real ROC-AUC bar, not a fake synthetic chart -->
-        <div class="flex flex-col gap-2">
-          <div class="flex justify-between text-xs text-muted font-mono-tight">
-            <span>0.5 (random guess)</span>
-            <span>1.0 (perfect)</span>
-          </div>
-          <div class="h-3 bg-line rounded-full overflow-hidden relative">
-            <div class="h-full bg-teal rounded-full" style="width:75%"></div>
-          </div>
-          <span class="text-right font-mono-tight text-sm text-tealdark font-medium">0.75 ROC-AUC</span>
-        </div>
-
-        <div class="h-px bg-line"></div>
-        <p class="text-muted text-xs leading-relaxed font-mono-tight">PERSONAL PROJECT, NOT PRODUCTION DATA · built to practice end-to-end modeling, not a claim of professional deployment.</p>
-      </div>
-    </div>
-
-    <div class="h-px bg-line"></div>
-
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="flex flex-col gap-3">
-        <span class="font-mono-tight text-[10px] text-teal">01 / APPROACH</span>
-        <h4 class="text-lg font-semibold">Clean before modeling.</h4>
-        <p class="text-muted text-sm leading-relaxed">Used SQL to prepare and structure the raw transaction data before any modeling began.</p>
-      </div>
-      <div class="flex flex-col gap-3">
-        <span class="font-mono-tight text-[10px] text-teal">02 / METHOD</span>
-        <h4 class="text-lg font-semibold">Random Forest classification.</h4>
-        <p class="text-muted text-sm leading-relaxed">Trained a Random Forest model in Python to flag likely-fraudulent transactions.</p>
-      </div>
-      <div class="flex flex-col gap-3">
-        <span class="font-mono-tight text-[10px] text-teal">03 / RESULT</span>
-        <h4 class="text-lg font-semibold">0.75 ROC-AUC.</h4>
-        <p class="text-muted text-sm leading-relaxed">A solid first model result, with room to keep improving feature engineering.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- FURTHER PROJECTS: real work, not synthetic concepts -->
 <section class="max-w-[1280px] mx-auto px-6 md:px-10 pb-16 md:pb-20 flex flex-col gap-9">
   <div class="flex flex-col gap-4">
-    <span class="font-mono-tight text-[11px] text-teal uppercase tracking-wide">04 / More real work</span>
-    <h2 class="text-3xl md:text-4xl font-semibold leading-tight">Thesis research and workplace tools.</h2>
-    <p class="text-muted leading-relaxed max-w-[60ch]">Two more pieces that show the same pattern: take on the detail work, ship something that works.</p>
+    <span class="font-mono-tight text-[11px] text-teal uppercase tracking-wide">04 / Workplace tool</span>
+    <h2 class="text-3xl md:text-4xl font-semibold leading-tight">A tracker built to help the team.</h2>
+    <p class="text-muted leading-relaxed max-w-[60ch]">A practical example of turning a recurring work need into a simple, shareable tool.</p>
   </div>
 
   <div class="grid md:grid-cols-2 gap-6">
-    <div class="bg-white border border-line rounded-xl overflow-hidden flex flex-col">
-      <div class="bg-paperalt p-6 flex flex-col gap-3">
-        <span class="font-mono-tight text-[9px] text-muted">UNDERGRADUATE THESIS · REAL RESULT</span>
-        <div class="flex items-end gap-4 h-[90px]">
-          <div class="flex flex-col items-center gap-1.5 flex-1">
-            <span class="font-mono-tight text-xs text-tealdark">+8.08</span>
-            <div class="w-full bg-teal rounded-t" style="height:70px"></div>
-            <span class="font-mono-tight text-[9px] text-muted">ROUGE-1 pts</span>
-          </div>
-          <div class="flex flex-col items-center gap-1.5 flex-1">
-            <span class="font-mono-tight text-xs text-tealdark">3×</span>
-            <div class="w-full bg-tealmid rounded-t" style="height:90px"></div>
-            <span class="font-mono-tight text-[9px] text-muted">ROUGE-2 gain</span>
-          </div>
-        </div>
-      </div>
-      <div class="p-6 flex flex-col gap-3">
-        <span class="w-fit bg-pill text-tealdark text-[11px] font-semibold px-3 py-1.5 rounded-full">Team lead</span>
-        <span class="font-mono-tight text-[10px] text-teal">NLP RESEARCH</span>
-        <h3 class="text-xl font-semibold leading-snug">LORECAST — Longformer-based summarization</h3>
-        <p class="text-muted text-sm leading-relaxed">Led a research team and personally owned data cleaning and verification across 50,000 articles, improving model performance by 8+ ROUGE-1 points and tripling ROUGE-2 scores.</p>
-      </div>
-    </div>
-
     <div class="bg-white border border-line rounded-xl overflow-hidden flex flex-col">
       <div class="bg-paperalt p-6 flex flex-col gap-3">
         <span class="font-mono-tight text-[9px] text-muted">CITI KPI TRACKER · REAL RESULT</span>
@@ -449,7 +445,7 @@
       <h2 class="text-3xl md:text-4xl font-semibold leading-tight">Four roles, one pattern.</h2>
     </div>
     <p class="text-muted leading-relaxed">Customer support, fraud review and project coordination — the experience behind my analytical perspective.</p>
-    <span class="w-fit bg-pill text-tealdark text-[11px] font-semibold px-3 py-1.5 rounded-full">Financial services &amp; BPO background</span>
+    <span class="w-fit bg-pill text-tealdark text-[11px] font-semibold px-3 py-1.5 rounded-full">Financial services &amp; Project Management background</span>
   </div>
 
   <div class="flex flex-col">
