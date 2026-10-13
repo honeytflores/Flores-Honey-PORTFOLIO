@@ -56,7 +56,7 @@
       <header class="pb-8 md:pb-10 border-b border-line">
         <span class="font-mono-tight text-[11px] text-teal tracking-wide">PROJECT 01 · PERSONAL DATA ANALYSIS PROJECT</span>
         <h1 id="project-title" class="mt-5 text-3xl md:text-5xl font-semibold leading-tight">Transaction Fraud Detection</h1>
-        <p class="mt-4 text-muted text-lg leading-relaxed">Using transaction patterns to explore how data preparation and machine learning can help identify potentially fraudulent activity.</p>
+        <p class="mt-4 text-muted text-lg leading-relaxed">Using transaction patterns to rank disputes by fraud risk, so a review team could prioritize the riskiest cases first instead of working the queue in arrival order.</p>
         <p class="mt-6 text-sm text-muted leading-relaxed">
           <span class="font-semibold text-ink">Project type:</span> Personal project
           <span aria-hidden="true" class="mx-2 text-teal">·</span>
@@ -68,12 +68,12 @@
 
       <section class="py-8 border-b border-line">
         <h2 class="text-xl font-semibold">Scenario</h2>
-        <p class="mt-3 text-muted leading-relaxed">Could patterns in a dataset of 8,000 transactions help distinguish potentially fraudulent activity from legitimate transactions? This personal project explores that question as a modeling exercise, not as a deployed or production system.</p>
+        <p class="mt-3 text-muted leading-relaxed">A review team can't investigate every disputed transaction with the same urgency. Could patterns in a dataset of 8,000 disputes help rank which ones are most likely fraudulent, so the riskiest cases get reviewed first? This personal project explores that question as a modeling exercise, not as a deployed or production system.</p>
       </section>
 
       <section class="py-8 border-b border-line">
         <h2 class="text-xl font-semibold">Summary</h2>
-        <p class="mt-3 text-muted leading-relaxed">I prepared and structured the transaction records with SQL, then trained a Random Forest classifier in Python. The model achieved a 0.75 ROC-AUC on held-out transactions. The result is a useful baseline for a personal project, with further feature engineering needed to improve it.</p>
+        <p class="mt-3 text-muted leading-relaxed">I prepared and structured the transaction records with SQL, then trained a Random Forest classifier in Python to score each dispute's likelihood of being fraudulent. Ranked by that score, a review team could work the highest-risk disputes first rather than in arrival order. The model achieved a 0.75 ROC-AUC on held-out transactions—a useful baseline for a personal project, with further feature engineering needed to improve it.</p>
       </section>
 
       <section class="py-8 border-b border-line">
@@ -128,7 +128,7 @@
 
       <section class="py-8">
         <h2 class="text-xl font-semibold">Why it Matters</h2>
-        <p class="mt-3 text-muted leading-relaxed">Fraud analysis can affect both customers and business decisions, so useful detection work needs careful data preparation and honest evaluation. This project connects my prior experience reviewing disputes with the technical skills I’m building, while keeping clear that this model was a personal exercise—not a deployed system or a replacement for human review.</p>
+        <p class="mt-3 text-muted leading-relaxed">Review teams can't treat every dispute with equal urgency, so being able to prioritize which ones are riskiest—not just flag fraud in the abstract—is what makes this kind of analysis useful day to day. This project connects my prior experience reviewing disputes with the technical skills I'm building, while keeping clear that this model was a personal exercise—not a deployed system or a replacement for human review.</p>
         <div class="mt-5 flex flex-wrap gap-4">
           <a href="https://fraud-dispute-detection-pdfp2nuhle6pmqo57rsvrc.streamlit.app/" target="_blank" rel="noopener noreferrer" class="inline-flex text-teal text-sm font-semibold hover:underline">View live demo ↗</a>
           <a href="https://github.com/honeytflores/fraud-dispute-detection" target="_blank" rel="noopener noreferrer" class="inline-flex text-teal text-sm font-semibold hover:underline">View GitHub repository ↗</a>
