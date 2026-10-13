@@ -77,6 +77,43 @@
       </section>
 
       <section class="py-8 border-b border-line">
+        <h2 class="text-xl font-semibold">Visuals &amp; Findings</h2>
+        <p class="mt-3 text-muted leading-relaxed">Key patterns surfaced through SQL exploration and EDA, followed by the trained model's evaluation.</p>
+
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <figure class="bg-paperalt border border-line rounded-lg p-4">
+            <img src="files/01_class_balance.png" alt="Bar chart comparing the count of fraudulent vs. legitimate disputes in the dataset" class="w-full rounded-md" loading="lazy">
+            <figcaption class="mt-3 text-sm text-muted leading-relaxed">Dispute outcomes: roughly 20.75% of reviewed disputes were fraudulent.</figcaption>
+          </figure>
+
+          <figure class="bg-paperalt border border-line rounded-lg p-4">
+            <img src="files/02_fraud_by_category.png" alt="Horizontal bar chart of fraud rate by merchant category, highest for Gift Cards and Crypto/Investment" class="w-full rounded-md" loading="lazy">
+            <figcaption class="mt-3 text-sm text-muted leading-relaxed">Gift Cards (33.9%) and Crypto/Investment (33.0%) were the riskiest merchant categories.</figcaption>
+          </figure>
+
+          <figure class="bg-paperalt border border-line rounded-lg p-4">
+            <img src="files/03_risk_factors.png" alt="Four bar charts showing fraud rate by account age, channel, geography, and time of day" class="w-full rounded-md" loading="lazy">
+            <figcaption class="mt-3 text-sm text-muted leading-relaxed">New accounts, foreign transactions, and late-night activity all showed elevated fraud rates.</figcaption>
+          </figure>
+
+          <figure class="bg-paperalt border border-line rounded-lg p-4">
+            <img src="files/04_monthly_trend.png" alt="Line chart of the monthly fraud rate trend across 2024" class="w-full rounded-md" loading="lazy">
+            <figcaption class="mt-3 text-sm text-muted leading-relaxed">Monthly fraud rate across the dataset's 2024 transactions, used to check for seasonal drift.</figcaption>
+          </figure>
+
+          <figure class="bg-paperalt border border-line rounded-lg p-4">
+            <img src="files/05_model_evaluation.png" alt="Confusion matrix and ROC curve for the Random Forest model, showing an AUC of 0.75" class="w-full rounded-md" loading="lazy">
+            <figcaption class="mt-3 text-sm text-muted leading-relaxed">Confusion matrix and ROC curve for the Random Forest classifier on held-out transactions (AUC = 0.75).</figcaption>
+          </figure>
+
+          <figure class="bg-paperalt border border-line rounded-lg p-4">
+            <img src="files/06_feature_importance.png" alt="Horizontal bar chart of the top 12 feature importances from the Random Forest model" class="w-full rounded-md" loading="lazy">
+            <figcaption class="mt-3 text-sm text-muted leading-relaxed">Top drivers of the model's predictions, led by transaction amount and account age.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="py-8 border-b border-line">
         <h2 class="text-xl font-semibold">Key Challenges and Solutions</h2>
         <h3 class="mt-5 font-semibold">Preparing records for modeling</h3>
         <p class="mt-2 text-muted leading-relaxed">The transaction data needed a consistent structure before model training. I used SQL to clean and prepare the 8,000 records first.</p>
